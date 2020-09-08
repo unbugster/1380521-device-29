@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Andrew Bagaev](https://up.htmlacademy.ru/htmlcss/29/user/1380521).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
