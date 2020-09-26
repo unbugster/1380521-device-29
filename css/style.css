@@ -1,4 +1,19 @@
-/*Fonts*/
+/* Variables */
+:root {
+  --basic-yellow: #FFC600;
+  --basic-yellow-light: #F7E296;
+  --basic-yellow-dark: #F0C52E;
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-grey-light: #E5E5E5;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-green: #91C92F;
+  --basic-half-grey: #7E7E7E;
+  --basic-pink: #F6DADA;
+}
+
+/* Fonts */
 @font-face {
 
   font-family: "Gilroy";
@@ -19,4 +34,35 @@
   src: local('Gilroy'),
     url("../fonts/gilroylight.woff2") format('woff2'),
     url("../fonts/gilroylight.woff") format('woff');
+}
+
+/* Global */
+body {
+  margin: 0
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+  text-decoration: none
+}
+
+.feedback {
+  color: black
+}
+
+.feedback ul {
+  list-style: none
+}
+
+.feedback p {
+  margin-bottom: 0
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
