@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   --basic-yellow: #FFC600;
-  --basic-yellow-light: #F7E296;
+  --basic-yellow-special: #F7E296;
   --basic-yellow-dark: #F0C52E;
   --basic-black: #000000;
   --basic-white: #FFFFFF;
@@ -50,27 +50,82 @@ body {
 }
 
 img {
-  max-width: 100%
+  max-width: 100% height: auto;
 }
 
-a {
-  text-decoration: none
-}
-
-.feedback {
-  color: black
-}
-
-.feedback ul {
-  list-style: none
-}
-
-.feedback p {
-  margin-bottom: 0
+.page a {
+  text-decoration: none;
+  color: var(--basic-black);
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* Header */
+
+.main-header {
+  background-color: var(--basic-yellow-special);
+}
+
+.header__logo a:hover,
+.header__user-list a:hover,
+.footer__logo a:hover,
+.header__user-item a:hover,
+.nav__list a:hover,
+.footer__services a:hover,
+.footer__user-list a:hover {
+  opacity: 0.6;
+}
+
+.header__logo a:active,
+.header__user-list a:active,
+.footer__logo a:active,
+.header__user-item a:active,
+.nav__list a:active,
+.footer__services a:active,
+.footer__user-list a:active {
+  opacity: 0.3;
+}
+
+.search {
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header__user-list {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-black);
+  list-style: none;
+}
+
+/* Если нельзя глобально всем ссылкам черный цвет задать*/
+.header__user-list a {
+  color: var(--basic-black);
+}
+
+.nav__list {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  list-style: none;
+}
+
+.catalog__list {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  list-style: none;
+  color: var(--basic-black);
 }
