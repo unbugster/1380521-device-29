@@ -56,6 +56,7 @@ img {
 .page a {
   text-decoration: none;
   color: var(--basic-black);
+  /*можно так всем ссылкам цвет указать или Д25 это запрещает? */
 }
 
 *,
@@ -63,6 +64,25 @@ img {
 *::after {
   box-sizing: border-box;
 }
+
+
+.button,
+.button:focus {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  color: color: var(--basic-black);
+
+  background-color: var(--basic-yellow-dark);
+  vertical-align: middle;
+  cursor: pointer;
+}
+
 
 /* Header */
 
@@ -73,20 +93,25 @@ img {
 .header__logo a:hover,
 .header__user-list a:hover,
 .footer__logo a:hover,
+.footer__logo-academy a:hover,
 .header__user-item a:hover,
 .nav__list a:hover,
-.footer__services a:hover,
+.footer__services-list a:hover,
 .footer__user-list a:hover {
   opacity: 0.6;
 }
 
+/* Для каждой секции лучше отдельно делать или можно разом все одинаковые запихать? */
 .header__logo a:active,
 .header__user-list a:active,
 .footer__logo a:active,
+.footer__logo-academy a:active,
 .header__user-item a:active,
 .nav__list a:active,
-.footer__services a:active,
-.footer__user-list a:active {
+.footer__services-list a:active,
+.footer__user-list a:active,
+.slider-item__button:active,
+.popular__list a:active {
   opacity: 0.3;
 }
 
@@ -114,18 +139,217 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
+  /* в леттер спейсинг в макете указаны em, стоит переделывать на пиксели?(в обучающем видео про это что-то рассказывалиы) */
   letter-spacing: 1.8px;
   text-transform: uppercase;
+
   color: var(--basic-black);
   list-style: none;
 }
 
 .catalog__list {
   font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
   list-style: none;
+
   color: var(--basic-black);
+}
+
+/* Slider */
+
+.slider__list {
+  list-style: none;
+}
+
+.title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+
+  color: color: var(--basic-black);
+}
+
+
+.slider__list p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: color: var(--basic-black);
+}
+
+
+
+.slider-item__table td {
+  font-family: "Gilroy", Arial, sans-serif;
+
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+
+
+  letter-spacing: 3.6px;
+  color: var(--basic-black);
+}
+
+.slider-item__table th {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+
+  letter-spacing: 1.3px;
+
+  color: var(--basic-black);
+}
+
+/* Popular */
+
+.popular__list {
+  list-style: none;
+}
+
+.popular__list a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.9px;
+
+  color: var(--basic-black);
+}
+
+
+.popular__item {
+  background-color: var(--basic-yellow-special);
+}
+
+.popular__item:hover {
+  background-color: var(--basic-yellow-dark);
+}
+
+
+/* Services */
+
+.services__button-list {
+  list-style: none;
+}
+
+.services__list {
+  list-style: none;
+}
+
+.services__item p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+
+  color: var(--basic-black);
+}
+
+
+
+.services-button:active {
+  color: var(--basic-yellow-special);
+  background-color: var(--basic-black);
+}
+
+
+/* Logotypes */
+
+/* Где посмотреть как картинку из цветной делать чернобелой?
+нашел нечто похожее, это оно? http://tradebenefit.ru/cherno-beloe-izobrazhenie-ili-element-css */
+
+.logotypes__list {
+  list-style: none;
+}
+
+/* Info */
+
+.info p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+
+  color: var(--basic-black);
+}
+
+.info__list {
+  font-family: "Gilroy", Arial, sans-serif;
+
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: var(--basic-black);
+}
+
+
+/* В стайлгайде нет инструкции, как ведет себя кнопка "подробнее о нас, предполагаем, что так же, как и остальные кнопки?*/
+
+
+
+/* Contact */
+
+.contact p {
+  font-family: "Open Sans", Arial, sans-serif;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+
+
+
+  color: var(--basic-black);
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: var(--basic-dark);
+}
+
+.footer__user-list a {
+  font-family: "Open Sans", Arial, sans-serif;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  list-style: none;
+}
+
+.address,
+a.phone {
+  font-family: "Open Sans", Arial, sans-serif;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: var(--basic-white);
+}
+
+.services__list a {
+  font-family: "Gilroy", Arial, sans-serif;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  color: var(--basic-white);
 }
