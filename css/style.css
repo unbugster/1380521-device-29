@@ -109,7 +109,7 @@ img {
  Hover Active */
 
 .op-hover a:hover,
-.breadcrumbs__item a:hover {
+.breadcrumbs-item a:hover {
   opacity: 0.6;
 }
 
@@ -359,22 +359,22 @@ img {
   color: var(--basic-white);
 }
 
-/* catalog */
+/* _________________________________________CATALOG */
 
-a.logout-link {
+.user-item .logout-link {
   color: rgba(0, 0, 0, 0.3);
 }
 
 /* Breadcrumbs */
 
-.breadcrumbs__list {
+.breadcrumbs-list {
   list-style: none;
 }
 
 
 
 
-.breadcrumbs__item {
+.breadcrumbs-item {
   font-size: 14px;
   line-height: 19px;
 
@@ -383,7 +383,7 @@ a.logout-link {
   opacity: 0.3;
 }
 
-.breadcrumbs__item a:active {
+.breadcrumbs-item a:active {
   opacity: 0.1;
 }
 
@@ -400,11 +400,11 @@ a.logout-link {
   color: var(--basic-black);
 }
 
-.sorting__list {
+.sorting-list {
   list-style: none;
 }
 
-.sorting__item {
+.sorting-item {
 
   font-weight: 400;
   font-size: 14px;
@@ -417,24 +417,24 @@ a.logout-link {
 
 /* Тут вроде не работает как должно + со стрелками вниз-вверх пока тоже хз что делать*/
 
-.sorting__item a:hover {
+.sorting-item a:hover {
   opacity: 0.6;
 }
 
-.sorting__item a:active,
-.sorting__item--current {
+.sorting-item a:active,
+.sorting-item--current {
   opacity: 1;
 }
 
-.sorting__updown-list {
+.updown-list {
   list-style: none;
 }
 
-.sorting__goods-list {
+.goods-list {
   list-style: none;
 }
 
-.goods-item__title {
+.goods-item-title {
   font-family: "Gilroy", Arial, sans-serif;
 
   font-weight: 800;
@@ -448,7 +448,7 @@ a.logout-link {
 
 }
 
-.goods-item__price {
+.goods-item-price {
   font: inherit;
   font-weight: 300;
   font-size: 16px;

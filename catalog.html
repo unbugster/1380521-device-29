@@ -23,9 +23,9 @@
     </form>
 
 
-    <ul class="user-list">
+    <ul class="user-list op-hover op-active">
       <li class="user-item">
-        <a class="login-link" href="#">Валентин Петухов</a>
+        <a class="user-link" href="#">Валентин Петухов</a>
       </li>
       <li class="user-item">
         <a class="logout-link" href="#">Выйти</a>
@@ -78,48 +78,48 @@
   </header>
 
   <main class="container">
-    <h1 class="catalog__title title">Моноподы для селфи</h1>
+    <h1 class="catalog-title title">Моноподы для селфи</h1>
 
     <!--Хлебные крошки-->
 
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__item">
+    <ul class="breadcrumbs-list">
+      <li class="breadcrumbs-item">
         <a href="index.html">Главная</a>
       </li>
-      <li class="breadcrumbs__item">
-        <a>Каталог товаров</a>
+      <li class="breadcrumbs-item">
+        <a href="">Каталог товаров</a>
       </li>
-      <li class="breadcrumbs__item">
+      <li class="breadcrumbs-item">
         Моноподы для селфи
       </li>
     </ul>
 
     <section class="filter">
-      <h2 class="filter__title catalog-title">Фильтр:</h2>
+      <h2 class="filter-title catalog-title">Фильтр:</h2>
       <!-- Здесь будет форма фильтра -->
     </section>
 
     <section class="sorting">
-      <h2 class="sorting__title catalog-title">Сортировка:</h2>
-      <ul class="sorting__list">
-        <li class="sorting__item sorting__item--current">
+      <h2 class="sorting-title catalog-title">Сортировка:</h2>
+      <ul class="sorting-list">
+        <li class="sorting-item sorting-item--current">
           <a href="">По цене</a>
         </li>
-        <li class="sorting__item">
+        <li class="sorting-item">
           <a href="">По типу</a>
         </li>
-        <li class="sorting__item">
+        <li class="sorting-item">
           <a href="">По популярности</a>
         </li>
       </ul>
 
-      <ul class="sorting__updown-list">
-        <li class="sorting__updown-item">
+      <ul class="updown-list">
+        <li class="updown-item">
           <a href="">
             <img src="https://via.placeholder.com/11x10" alt="По возрастанию" width="11" height="10">
           </a>
         </li>
-        <li class="sorting__updown-item">
+        <li class="updown-item">
           <a href="">
             <img src="https://via.placeholder.com/11x10" alt="По убыванию" width="11" height="10">
           </a>
@@ -132,61 +132,61 @@
 
       <section class="goods-list"> -->
 
-      <ul class="sorting__goods-list">
-        <li class="sorting__goods-item goods-item">
+      <ul class="goods-list">
+        <li class="goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Любительская селфи-палка">
           <a href="">
-            <h3 class="goods-item__title">Любительская селфи-палка</h3>
+            <h3 class="goods-item-title">Любительская селфи-палка</h3>
           </a>
-          <span class="goods-item__price">500 руб.</span>
+          <span class="goods-item-price">500 руб.</span>
 
           <button type="button">В корзину</button>
           <!-- тут тоже может тогда ссылками сделать?-->
           <button type="button">Добавить к сравнению</button>
         </li>
-        <li class="sorting__goods-item goods-item">
+        <li class="goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
           <a href="">
-            <h3 class="goods-item__title">Профессиональная селфи-палка</h3>
+            <h3 class="item-title">Профессиональная селфи-палка</h3>
           </a>
-          <span class="goods-item__price">1 500 руб.</span>
+          <span class="item-price">1 500 руб.</span>
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
-        <li class="sorting__goods-item goods-item">
+        <li class="goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
           <a href="">
-            <h3 class="goods-item__title">Непотопляемая селфи-палка</h3>
+            <h3 class="goods-item-title">Непотопляемая селфи-палка</h3>
           </a>
-          <span class="goods-item__price">2 500 руб.</span>
+          <span class="goods-item-price">2 500 руб.</span>
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
-        <li class="sorting__goods-item goods-item">
+        <li class="goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
           <a href="#">
-            <h3 class="goods-item__title">Селфи-палка «Следуй за мной»</h3>
+            <h3 class="goods-item-title">Селфи-палка «Следуй за мной»</h3>
           </a>
-          <span class="goods-item__price">4 900 руб.</span>
+          <span class="goods-item-price">4 900 руб.</span>
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
       </ul>
 
-      <ul>
-        <li>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
           <a href="#">Назад</a>
         </li>
-        <li>
+        <li class="nav-menu-item">
           <a>1</a>
         </li>
-        <li>
+        <li class="nav-menu-item">
           <a href="#">2</a>
         </li>
-        <li>
+        <li class="nav-menu-item">
           <a href="#">3</a>
         </li>
-        <li>
+        <li class="nav-menu-item">
           <a href="#">Вперед</a>
         </li>
       </ul>
@@ -194,9 +194,9 @@
     </section>
   </main>
   <!-- Исправил Footer-->
-  <footer>
-    <a href="index.html">
-      <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип магазина «Девайс»">
+  <footer class="footer">
+    <a class="footer-logo op-hover op-active">
+      <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
     </a>
 
     <ul>
