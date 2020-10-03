@@ -78,7 +78,7 @@
   </header>
 
   <main class="container">
-    <h1 class="catalog-title title">Моноподы для селфи</h1>
+    <h1 class="main-title title">Моноподы для селфи</h1>
 
     <!--Хлебные крошки-->
 
@@ -102,25 +102,25 @@
     <section class="sorting">
       <h2 class="sorting-title catalog-title">Сортировка:</h2>
       <ul class="sorting-list clear-list">
-        <li class="sorting-item sorting-item--current">
-          <a href="">По цене</a>
+        <li class="sorting-item">
+          <a class="sorting-link sorting-link-active" href="">По цене</a>
         </li>
         <li class="sorting-item">
-          <a href="">По типу</a>
+          <a class="sorting-link" href="">По типу</a>
         </li>
         <li class="sorting-item">
-          <a href="">По популярности</a>
+          <a class="sorting-link" href="">По популярности</a>
         </li>
       </ul>
 
       <ul class="updown-list clear-list">
         <li class="updown-item">
-          <a href="">
+          <a class="updown-link up-link" href="">
             <img src="https://via.placeholder.com/11x10" alt="По возрастанию" width="11" height="10">
           </a>
         </li>
         <li class="updown-item">
-          <a href="">
+          <a class="updown-link down-link updown-link-active" href="">
             <img src="https://via.placeholder.com/11x10" alt="По убыванию" width="11" height="10">
           </a>
         </li>
@@ -140,9 +140,10 @@
           </a>
           <span class="goods-item-price">500 руб.</span>
 
-          <button type="button">В корзину</button>
-          <!-- тут тоже может тогда ссылками сделать?-->
-          <button type="button">Добавить к сравнению</button>
+          <button class="basket-btn button" type="button">В корзину</button>
+          <!-- тут  можно ссылками сделать, а не кнопками? По идее никуда со страницы не переходим, линк не нужен, вроде как кнопка должна быть.
+          Надо почитать, как правильно кнопки стилизуются!...-->
+          <button class="compare-btn" type="button">Добавить к сравнению</button>
         </li>
         <li class="goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -150,8 +151,8 @@
             <h3 class="goods-item-title">Профессиональная селфи-палка</h3>
           </a>
           <span class="item-price">1 500 руб.</span>
-          <button type="button">В корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <button class="basket-btn button" type="button">В корзину</button>
+          <button class="compare-btn" type="button">Добавить к сравнению</button>
         </li>
         <li class="goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
@@ -159,8 +160,8 @@
             <h3 class="goods-item-title">Непотопляемая селфи-палка</h3>
           </a>
           <span class="goods-item-price">2 500 руб.</span>
-          <button type="button">В корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <button class="basket-btn button" type="button">В корзину</button>
+          <button class="compare-btn" type="button">Добавить к сравнению</button>
         </li>
         <li class="goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
@@ -168,8 +169,8 @@
             <h3 class="goods-item-title">Селфи-палка «Следуй за мной»</h3>
           </a>
           <span class="goods-item-price">4 900 руб.</span>
-          <button type="button">В корзину</button>
-          <button type="button">Добавить к сравнению</button>
+          <button class="basket-btn button" type="button">В корзину</button>
+          <button class="compare-btn" type="button">Добавить к сравнению</button>
         </li>
       </ul>
 
@@ -193,24 +194,26 @@
 
     </section>
   </main>
-  <!-- Исправил Footer-->
+
+
+
   <footer class="footer">
-    <a class="footer-logo op-hover op-active">
+    <a class="footer-logo ">
       <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
     </a>
 
-    <ul class="footer-user-list op-hover op-active clear-list">
+    <ul class="footer-user-list  clear-list">
       <li class="footer-user-item">
-        <a href="#">Валентин Петухов</a>
+        <a class="user-link" href="#">Валентин Петухов</a>
       </li>
       <li class="footer-user-item">
-        <a href="#">Выйти</a>
+        <a class="logout-link" href="#">Выйти</a>
       </li>
       <li class="footer-user-item">
-        <a href="">Сравнить</a>
+        <a class="compare-link" href="">Сравнить</a>
       </li>
       <li class="footer-user-item">
-        <a href="">Корзина</a>
+        <a class="basket-link" href="">Корзина</a>
       </li>
     </ul>
 

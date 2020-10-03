@@ -114,11 +114,13 @@ img {
 /* Hover Active */
 
 .op-hover a:hover,
-.breadcrumbs-item a:hover {
+.breadcrumbs-item a:hover,
+.footer-logo:hover {
   opacity: 0.6;
 }
 
-.op-active a:active {
+.op-active a:active,
+.footer-logo:active {
   opacity: 0.3;
 }
 
@@ -212,9 +214,8 @@ img {
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
-
-
   letter-spacing: 3.6px;
+
   color: var(--basic-black);
 }
 
@@ -223,7 +224,6 @@ img {
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
-
   letter-spacing: 1.3px;
 
   color: var(--basic-black);
@@ -283,7 +283,6 @@ img {
 
 .info-list {
   font-family: "Gilroy", Arial, sans-serif;
-
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -309,7 +308,14 @@ img {
 
 .footer-user-list a {
   color: rgba(255, 255, 255, 0.7);
+}
 
+.footer-user-list a:hover {
+  color: var(--basic-white);
+}
+
+.footer-user-list a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .address,
@@ -323,7 +329,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-
   letter-spacing: 3.6px;
   text-transform: uppercase;
 
@@ -355,6 +360,16 @@ img {
   opacity: 0.3;
 }
 
+
+.breadcrumbs-item-active {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Так делаем ссылку некликабельной в данном случае?*/
+
+
+
 .breadcrumbs-item a:active {
   opacity: 0.1;
 }
@@ -371,6 +386,9 @@ img {
 
   color: var(--basic-black);
 }
+
+
+/* Sorting */
 
 .sorting-item a {
 
@@ -389,8 +407,13 @@ img {
   opacity: 0.6;
 }
 
-.sorting-item a:active,
-.sorting-item--current {
+.sorting-item .sorting-link-active {
+  opacity: 1;
+  pointer-events: none;
+  cursor: default;
+}
+
+.sorting-item a:active {
   opacity: 1;
 }
 
