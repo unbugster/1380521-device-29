@@ -60,6 +60,13 @@
 }
 
 /* Global */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 1440px;
   margin: 0;
@@ -80,11 +87,10 @@ img {
   text-decoration: none;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.clear-list {
+  list-style: none;
 }
+
 
 /* Button */
 
@@ -105,8 +111,7 @@ img {
 }
 
 
-/* есть смысл отдельно выписать все подобные элементы для простоты нахождения, или обычно так не делают?
- Hover Active */
+/* Hover Active */
 
 .op-hover a:hover,
 .breadcrumbs-item a:hover {
@@ -149,7 +154,7 @@ img {
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-black);
-  list-style: none;
+
 }
 
 
@@ -167,7 +172,6 @@ img {
   text-transform: uppercase;
 
   color: var(--basic-black);
-  list-style: none;
 }
 
 .menu a {
@@ -180,16 +184,13 @@ img {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  list-style: none;
 
   color: var(--basic-black);
 }
 
 /* Slider */
 
-.slider-list {
-  list-style: none;
-}
+
 
 .title {
   font-family: "Gilroy", Arial, sans-serif;
@@ -204,8 +205,6 @@ img {
 .slider-list p {
   color: color: var(--basic-black);
 }
-
-
 
 .slider-item-table td {
   font-family: "Gilroy", Arial, sans-serif;
@@ -232,9 +231,7 @@ img {
 
 /* Popular */
 
-.popular-list {
-  list-style: none;
-}
+
 
 .popular-list a {
   font-family: "Gilroy", Arial, sans-serif;
@@ -256,13 +253,7 @@ img {
 
 /* Services */
 
-.services-button-list {
-  list-style: none;
-}
 
-.services-list {
-  list-style: none;
-}
 
 .services-item p {
 
@@ -279,11 +270,8 @@ img {
 
 /* Logotypes */
 
-/* http://tradebenefit.ru/cherno-beloe-izobrazhenie-ili-element-css */
+/*filter: grayscale(100%); - для серых логотипов */
 
-.logotypes-list {
-  list-style: none;
-}
 
 /* Info */
 
@@ -318,23 +306,15 @@ img {
   background-color: var(--basic-dark);
 }
 
-.footer-user-list {
-  list-style: none;
-}
 
 .footer-user-list a {
   color: rgba(255, 255, 255, 0.7);
 
-  list-style: none;
 }
 
 .address,
 .phone {
   color: var(--basic-white);
-}
-
-.footer-services-list {
-  list-style: none;
 }
 
 .footer-services-list a {
@@ -350,10 +330,6 @@ img {
   color: var(--basic-white);
 }
 
-.socials-list {
-  list-style: none;
-}
-
 
 .socials-list a {
   color: var(--basic-white);
@@ -367,14 +343,10 @@ img {
 
 /* Breadcrumbs */
 
-.breadcrumbs-list {
-  list-style: none;
-}
 
 
 
-
-.breadcrumbs-item {
+.breadcrumbs-item a {
   font-size: 14px;
   line-height: 19px;
 
@@ -400,11 +372,7 @@ img {
   color: var(--basic-black);
 }
 
-.sorting-list {
-  list-style: none;
-}
-
-.sorting-item {
+.sorting-item a {
 
   font-weight: 400;
   font-size: 14px;
@@ -424,14 +392,6 @@ img {
 .sorting-item a:active,
 .sorting-item--current {
   opacity: 1;
-}
-
-.updown-list {
-  list-style: none;
-}
-
-.goods-list {
-  list-style: none;
 }
 
 .goods-item-title {
@@ -456,3 +416,11 @@ img {
   letter-spacing: 0.05em;
   /*0.8px*/
 }
+
+
+.nav-menu a {
+  color: var(--basic-black);
+}
+
+
+/* Footer */
