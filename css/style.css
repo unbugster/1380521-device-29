@@ -20,9 +20,9 @@
   font-style: normal;
   font-weight: 800;
 
-  src: local('Gilroy'),
-    url("../fonts/gilroyextrabold.woff2") format('woff2'),
-    url("../fonts/gilroyextrabold.woff") format('woff');
+  src: local("Gilroy"),
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -32,15 +32,37 @@
   font-weight: 300;
 
   src: local('Gilroy'),
-    url("../fonts/gilroylight.woff2") format('woff2'),
-    url("../fonts/gilroylight.woff") format('woff');
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+
+  src: local("Open Sans"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+}
+
+
+@font-face {
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+
+  src: local("Open Sans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 /* Global */
 body {
   min-width: 1440px;
   margin: 0;
-  padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -50,13 +72,12 @@ body {
 }
 
 img {
-  max-width: 100% height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .page a {
   text-decoration: none;
-  color: var(--basic-black);
-  /*можно так всем ссылкам цвет указать или Д25 это запрещает? */
 }
 
 *,
@@ -65,9 +86,9 @@ img {
   box-sizing: border-box;
 }
 
+/* Button */
 
-.button,
-.button:focus {
+.button {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -76,11 +97,38 @@ img {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 
-  color: color: var(--basic-black);
+  color: var(--basic-black);
 
   background-color: var(--basic-yellow-dark);
   vertical-align: middle;
   cursor: pointer;
+}
+
+
+/* есть смысл отдельно выписать все подобные элементы для простоты нахождения, или обычно так не делают?
+ Hover Active */
+
+.op-hover a:hover,
+.breadcrumbs__item a:hover {
+  opacity: 0.6;
+}
+
+.op-active a:active {
+  opacity: 0.3;
+}
+
+.button:active,
+.slider-item-button:active {
+  color: rgba(5, 0, 0, 0.3)
+}
+
+.popular-item:hover {
+  background-color: var(--basic-yellow-dark);
+}
+
+.services-button:active {
+  color: var(--basic-yellow-special);
+  background-color: var(--basic-black);
 }
 
 
@@ -90,38 +138,13 @@ img {
   background-color: var(--basic-yellow-special);
 }
 
-.header__logo a:hover,
-.header__user-list a:hover,
-.footer__logo a:hover,
-.footer__logo-academy a:hover,
-.header__user-item a:hover,
-.nav__list a:hover,
-.footer__services-list a:hover,
-.footer__user-list a:hover {
-  opacity: 0.6;
-}
-
-/* Для каждой секции лучше отдельно делать или можно разом все одинаковые запихать? */
-.header__logo a:active,
-.header__user-list a:active,
-.footer__logo a:active,
-.footer__logo-academy a:active,
-.header__user-item a:active,
-.nav__list a:active,
-.footer__services-list a:active,
-.footer__user-list a:active,
-.slider-item__button:active,
-.popular__list a:active {
-  opacity: 0.3;
-}
-
 .search {
   font-size: 15px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header__user-list {
+.user-list {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -129,17 +152,17 @@ img {
   list-style: none;
 }
 
-/* Если нельзя глобально всем ссылкам черный цвет задать*/
-.header__user-list a {
+
+.user-list a {
   color: var(--basic-black);
 }
 
-.nav__list {
+.menu {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  /* в леттер спейсинг в макете указаны em, стоит переделывать на пиксели?(в обучающем видео про это что-то рассказывалиы) */
+
   letter-spacing: 1.8px;
   text-transform: uppercase;
 
@@ -147,7 +170,11 @@ img {
   list-style: none;
 }
 
-.catalog__list {
+.menu a {
+  color: var(--basic-black);
+}
+
+.submenu {
   font-family: "Open Sans", Arial, sans-serif;
 
   font-weight: 300;
@@ -160,7 +187,7 @@ img {
 
 /* Slider */
 
-.slider__list {
+.slider-list {
   list-style: none;
 }
 
@@ -174,18 +201,13 @@ img {
 }
 
 
-.slider__list p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-
+.slider-list p {
   color: color: var(--basic-black);
 }
 
 
 
-.slider-item__table td {
+.slider-item-table td {
   font-family: "Gilroy", Arial, sans-serif;
 
   font-weight: 300;
@@ -197,7 +219,7 @@ img {
   color: var(--basic-black);
 }
 
-.slider-item__table th {
+.slider-item-table th {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
   font-size: 13px;
@@ -210,11 +232,11 @@ img {
 
 /* Popular */
 
-.popular__list {
+.popular-list {
   list-style: none;
 }
 
-.popular__list a {
+.popular-list a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -225,29 +247,25 @@ img {
 }
 
 
-.popular__item {
+.popular-item {
   background-color: var(--basic-yellow-special);
 }
 
-.popular__item:hover {
-  background-color: var(--basic-yellow-dark);
-}
+
 
 
 /* Services */
 
-.services__button-list {
+.services-button-list {
   list-style: none;
 }
 
-.services__list {
+.services-list {
   list-style: none;
 }
 
-.services__item p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
+.services-item p {
+
   line-height: 28px;
   letter-spacing: 1.5px;
 
@@ -256,33 +274,26 @@ img {
 
 
 
-.services-button:active {
-  color: var(--basic-yellow-special);
-  background-color: var(--basic-black);
-}
+
 
 
 /* Logotypes */
 
-/* Где посмотреть как картинку из цветной делать чернобелой?
-нашел нечто похожее, это оно? http://tradebenefit.ru/cherno-beloe-izobrazhenie-ili-element-css */
+/* http://tradebenefit.ru/cherno-beloe-izobrazhenie-ili-element-css */
 
-.logotypes__list {
+.logotypes-list {
   list-style: none;
 }
 
 /* Info */
 
 .info p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
   line-height: 28px;
 
   color: var(--basic-black);
 }
 
-.info__list {
+.info-list {
   font-family: "Gilroy", Arial, sans-serif;
 
   font-weight: 800;
@@ -293,21 +304,10 @@ img {
 }
 
 
-/* В стайлгайде нет инструкции, как ведет себя кнопка "подробнее о нас, предполагаем, что так же, как и остальные кнопки?*/
-
-
-
 /* Contact */
 
 .contact p {
-  font-family: "Open Sans", Arial, sans-serif;
-
-  font-weight: 300;
-  font-size: 15px;
   line-height: 28px;
-
-
-
   color: var(--basic-black);
 }
 
@@ -318,30 +318,26 @@ img {
   background-color: var(--basic-dark);
 }
 
-.footer__user-list a {
-  font-family: "Open Sans", Arial, sans-serif;
+.footer-user-list {
+  list-style: none;
+}
 
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-
+.footer-user-list a {
   color: rgba(255, 255, 255, 0.7);
 
   list-style: none;
 }
 
 .address,
-a.phone {
-  font-family: "Open Sans", Arial, sans-serif;
-
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-
+.phone {
   color: var(--basic-white);
 }
 
-.services__list a {
+.footer-services-list {
+  list-style: none;
+}
+
+.footer-services-list a {
   font-family: "Gilroy", Arial, sans-serif;
 
   font-weight: 800;
@@ -352,4 +348,111 @@ a.phone {
   text-transform: uppercase;
 
   color: var(--basic-white);
+}
+
+.socials-list {
+  list-style: none;
+}
+
+
+.socials-list a {
+  color: var(--basic-white);
+}
+
+/* catalog */
+
+a.logout-link {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs__list {
+  list-style: none;
+}
+
+
+
+
+.breadcrumbs__item {
+  font-size: 14px;
+  line-height: 19px;
+
+  color: var(--basic-black);
+
+  opacity: 0.3;
+}
+
+.breadcrumbs__item a:active {
+  opacity: 0.1;
+}
+
+.catalog-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+
+
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+}
+
+.sorting__list {
+  list-style: none;
+}
+
+.sorting__item {
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: var(--basic-black);
+
+  opacity: 0.3;
+}
+
+/* Тут вроде не работает как должно + со стрелками вниз-вверх пока тоже хз что делать*/
+
+.sorting__item a:hover {
+  opacity: 0.6;
+}
+
+.sorting__item a:active,
+.sorting__item--current {
+  opacity: 1;
+}
+
+.sorting__updown-list {
+  list-style: none;
+}
+
+.sorting__goods-list {
+  list-style: none;
+}
+
+.goods-item__title {
+  font-family: "Gilroy", Arial, sans-serif;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.05em;
+  /* 0.9px*/
+
+  color: var(--basic-black);
+
+}
+
+.goods-item__price {
+  font: inherit;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  /*0.8px*/
 }

@@ -1,152 +1,173 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <title>Каталог товаров</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
+<body class="page-body">
 
-    <a href="index.html">
+  <header class="main-header">
+
+    <a class="header__logo" href="index.html">
       <img src="https://via.placeholder.com/165x35" width="165" height="35" alt="Логотип интернет-магазина «Девайс»">
     </a>
 
-    <form>
+    <form class="search">
       <input type="search" name="search" placeholder="Поиск по сайту">
       <button type="submit">Поиск</button>
     </form>
 
-    <ul>
-      <li>
-        <a href="#">Валентин Петухов</a>
+
+    <ul class="header__user-list">
+      <li class="header__user-item">
+        <a class="header__login-link user-link" href="#">Валентин Петухов</a>
       </li>
-      <li>
-        <a href="#">Выйти</a>
+      <li class="header__user-item">
+        <a class="header__login-link logout-link" href="#">Выйти</a>
       </li>
-      <li>
-        <a href="#">Сравнить</a>
+      <li class="header__user-item">
+        <a class="header__compare-link compare-link" href="#">Сравнить</a>
       </li>
-      <li>
-        <a href="#">Корзина</a>
+      <li class="header__user-item">
+        <a class="header__basket-link basket-link" href="#">Корзина</a>
       </li>
     </ul>
 
-    <ul>
-      <li>
-        <a href="#">Каталог товаров</a>
-        <ul>
-          <li>
-            <a href="#">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a>Моноподы для селфи</a>
-          </li>
-          <li>
-            <a href="#">Экшн-камеры</a>
-          </li>
-          <li>
-            <a href="#">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="#">Умные часы</a>
-          </li>
-          <li>
-            <a href="#">Квадрокоптер</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Доставка</a>
-      </li>
-      <li>
-        <a href="#">Гарантия</a>
-      </li>
-      <li>
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item nav-item__catalog">
+          <a href="#">Каталог товаров</a>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li class="catalog__item">
+              <a href="catalog.html">Моноподы для селфи</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#">Экшн-камеры</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#">Умные часы</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#">Квадрокоптер</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Гарантия</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
     </nav>
 
   </header>
 
-  <main>
-    <h1 class="visually-hidden">Моноподы для селфи</h1>
+  <main class="container">
+    <h1 class="catalog__title title">Моноподы для селфи</h1>
+
     <!--Хлебные крошки-->
-    <ul>
-      <li>
+
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
         <a href="index.html">Главная</a>
       </li>
-      <li>
+      <li class="breadcrumbs__item">
         <a>Каталог товаров</a>
       </li>
-      <li>
+      <li class="breadcrumbs__item">
         Моноподы для селфи
       </li>
     </ul>
 
-    <section>
-      <h2>Фильтр:</h2>
+    <section class="filter">
+      <h2 class="filter__title catalog-title">Фильтр:</h2>
       <!-- Здесь будет форма фильтра -->
     </section>
 
-    <section>
-      <h2>Сортировка:</h2>
-      <ul>
-        <li>
+    <section class="sorting">
+      <h2 class="sorting__title catalog-title">Сортировка:</h2>
+      <ul class="sorting__list">
+        <li class="sorting__item sorting__item--current">
           <a href="">По цене</a>
         </li>
-        <li>
+        <li class="sorting__item">
           <a href="">По типу</a>
         </li>
-        <li>
+        <li class="sorting__item">
           <a href="">По популярности</a>
         </li>
       </ul>
-      <ul>
-        <li>
-          <a href="">По возрастанию</a>
+
+      <ul class="sorting__updown-list">
+        <li class="sorting__updown-item">
+          <a href="">
+            <img src="https://via.placeholder.com/11x10" alt="По возрастанию" width="11" height="10">
+          </a>
         </li>
-        <li>
-          <a href="">По убыванию</a>
+        <li class="sorting__updown-item">
+          <a href="">
+            <img src="https://via.placeholder.com/11x10" alt="По убыванию" width="11" height="10">
+          </a>
         </li>
       </ul>
 
-      <ul>
-        <li>
-          <a href="">
-            <h3>Любительская селфи-палка</h3>
-          </a>
-          <span>500 руб.</span>
+      <!--- </section>
+
+Может так удобно будет сделать?
+
+      <section class="goods-list"> -->
+
+      <ul class="sorting__goods-list">
+        <li class="sorting__goods-item goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Любительская селфи-палка">
+          <a href="">
+            <h3 class="goods-item__title">Любительская селфи-палка</h3>
+          </a>
+          <span class="goods-item__price">500 руб.</span>
+
           <button type="button">В корзину</button>
+          <!-- тут тоже может тогда ссылками сделать?-->
           <button type="button">Добавить к сравнению</button>
         </li>
-        <li>
-          <a href="">
-            <h3>Профессиональная селфи-палка</h3>
-          </a>
-          <span>1 500 руб.</span>
+        <li class="sorting__goods-item goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
-          <button type="button">В корзину</button>
-          <button type="button">Добавить к сравнению</button>
-        </li>
-        <li>
           <a href="">
-            <h3>Непотопляемая селфи-палка</h3>
+            <h3 class="goods-item__title">Профессиональная селфи-палка</h3>
           </a>
-          <span>2 500 руб.</span>
-          <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <span class="goods-item__price">1 500 руб.</span>
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
-        <li>
-          <a href="#">
-            <h3>Селфи-палка «Следуй за мной»</h3>
+        <li class="sorting__goods-item goods-item">
+          <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <a href="">
+            <h3 class="goods-item__title">Непотопляемая селфи-палка</h3>
           </a>
-          <span>4 900 руб.</span>
+          <span class="goods-item__price">2 500 руб.</span>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
+        </li>
+        <li class="sorting__goods-item goods-item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          <a href="#">
+            <h3 class="goods-item__title">Селфи-палка «Следуй за мной»</h3>
+          </a>
+          <span class="goods-item__price">4 900 руб.</span>
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
