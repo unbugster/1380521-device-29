@@ -8,6 +8,8 @@
   --basic-grey-light: #E5E5E5;
   --basic-dark: #363636;
   --basic-grey: #464646;
+  --basic-grey-special: #D9D9D9;
+  --basic-grey-special-light: #EBEBEB;
   --basic-green: #91C92F;
   --basic-half-grey: #7E7E7E;
   --basic-pink: #F6DADA;
@@ -115,7 +117,9 @@ img {
 
 .op-hover a:hover,
 .breadcrumbs-item a:hover,
-.footer-logo:hover {
+.footer-logo:hover,
+.number:hover,
+.sorting-item a:hover {
   opacity: 0.6;
 }
 
@@ -125,7 +129,8 @@ img {
 }
 
 .button:active,
-.slider-item-button:active {
+.slider-item-button:active,
+.back-ahead-btns:active {
   color: rgba(0, 0, 0, 0.3)
 }
 
@@ -189,6 +194,8 @@ img {
 
   color: var(--basic-black);
 }
+
+
 
 /* Slider */
 
@@ -346,6 +353,11 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.submenu-item-link-active {
+  pointer-events: none;
+  cursor: default;
+}
+
 /* Breadcrumbs */
 
 
@@ -401,21 +413,28 @@ img {
   opacity: 0.3;
 }
 
-/* Тут вроде не работает как должно + со стрелками вниз-вверх пока тоже хз что делать*/
+.sorting-list {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 
-.sorting-item a:hover {
-  opacity: 0.6;
+  color: #000000;
 }
 
-.sorting-item .sorting-link-active {
+.number {
+  opacity: 0.3;
+}
+
+.sorting-item .sorting-link-active,
+.sorting-item a:active,
+.number-active,
+.number:active {
   opacity: 1;
   pointer-events: none;
   cursor: default;
 }
 
-.sorting-item a:active {
-  opacity: 1;
-}
 
 .goods-item-title {
   font-family: "Gilroy", Arial, sans-serif;
@@ -432,18 +451,38 @@ img {
 }
 
 .goods-item-price {
-  font: inherit;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
-  letter-spacing: 0.05em;
-  /*0.8px*/
+  letter-spacing: 0.8px;
+
 }
 
 
-.nav-menu a {
+.pagination-list {
+  font-family: "Gilroy", Arial, sans-serif;
+
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+  background-color: var(--basic-grey-special-light);
+}
+
+.pagination-list a {
   color: var(--basic-black);
 }
 
+
+
+
+.back-ahead-btns:hover {
+  background-color: var(--basic-grey-special);
+}
 
 /* Footer */
