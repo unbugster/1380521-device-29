@@ -93,6 +93,17 @@ img {
   list-style: none;
 }
 
+/* Grid */
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 
 /* Button */
 
@@ -148,6 +159,13 @@ img {
 
 .main-header {
   background-color: var(--basic-yellow-special);
+  display: grid;
+  width: 1160px;
+}
+
+.main-header-wrapper {
+  width: 1040px;
+  margin: 0 auto;
 }
 
 .search {
@@ -161,8 +179,12 @@ img {
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-black);
-
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 282px 134px auto;
 }
+
 
 
 .user-list a {
@@ -177,8 +199,10 @@ img {
 
   letter-spacing: 1.8px;
   text-transform: uppercase;
-
+  margin: 0;
+  padding: 0;
   color: var(--basic-black);
+
 }
 
 .menu a {
@@ -207,12 +231,41 @@ img {
   font-size: 47px;
   line-height: 58px;
 
-  color: color: var(--basic-black);
+  color: var(--basic-black);
 }
 
+.slider-list {
+  width: 1160px;
+}
+
+.slider-item {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 
 .slider-list p {
-  color: color: var(--basic-black);
+  color: var(--basic-black);
+
+}
+
+.slider-item-table {
+  display: grid;
+  grid-template-rows: 45px 45px;
+}
+
+.slider-item-table tbody {
+  order: 1;
+}
+
+.table-head {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+
+}
+
+.table-body {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
 .slider-item-table td {
@@ -224,6 +277,9 @@ img {
   letter-spacing: 3.6px;
 
   color: var(--basic-black);
+
+
+
 }
 
 .slider-item-table th {
@@ -234,11 +290,17 @@ img {
   letter-spacing: 1.3px;
 
   color: var(--basic-black);
+
+
 }
 
 /* Popular */
 
-
+.popular-list {
+  width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
 
 .popular-list a {
   font-family: "Gilroy", Arial, sans-serif;
@@ -260,7 +322,11 @@ img {
 
 /* Services */
 
-
+.services-container {
+  width: 1160px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
 
 .services-item p {
 
@@ -277,7 +343,19 @@ img {
 
 /* Logotypes */
 
+.logotypes-list {
+  width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
 /* Info */
+.contact-info {
+  width: 1160px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 
 .info p {
   line-height: 28px;
@@ -305,10 +383,50 @@ img {
 
 /* Footer */
 
+
+
 .footer {
   background-color: var(--basic-dark);
+  display: grid;
+  grid-template-columns: 3.5fr 5.5fr 4fr;
+  grid-template-rows: 1fr 127px 1fr;
+  grid-template-areas:
+    "logo . user"
+    "adress services tel"
+    ". socials html";
 }
 
+.footer-logo2 {
+  grid-area: logo;
+}
+
+.footer-logo2 svg {
+  fill: var(--basic-yellow-dark);
+}
+
+.footer-user-list {
+  grid-area: user;
+}
+
+.footer-services-list {
+  grid-area: services;
+}
+
+.address {
+  grid-area: adress;
+}
+
+.phone {
+  grid-area: tel;
+}
+
+.socials-list {
+  grid-area: socials;
+}
+
+.footer-logo-academy {
+  grid-area: html;
+}
 
 .footer-user-list a {
   color: rgba(255, 255, 255, 0.7);
