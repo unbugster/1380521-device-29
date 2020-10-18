@@ -173,7 +173,8 @@ img {
 
 
 
-.main-header-wrapper {
+.main-header-wrapper,
+.catalog-container {
   width: 1040px;
   margin: 0 auto;
 }
