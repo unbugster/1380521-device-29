@@ -507,12 +507,18 @@ img {
   cursor: default;
 }
 
-/* Так делаем ссылку некликабельной в данном случае?*/
 
 
 
 .breadcrumbs-item a:active {
   opacity: 0.1;
+}
+
+
+
+.filter-sorting-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .catalog-title {
@@ -530,6 +536,11 @@ img {
 
 
 /* Sorting */
+
+.sorting {
+  display: grid;
+
+}
 
 .sorting-item a {
 
