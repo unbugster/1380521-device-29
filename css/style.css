@@ -168,9 +168,13 @@ img {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.popular-item:hover {
+.popular-item-container:hover {
   background-color: var(--basic-yellow-dark);
 }
+
+
+
+
 
 .services-button:active {
   color: var(--basic-yellow-special);
@@ -258,7 +262,7 @@ img {
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-black);
-  padding-left: 20px;
+
   display: flex;
   justify-content: space-between;
   flex-basis: 50%;
@@ -310,6 +314,7 @@ img {
 
 .menu-item:first-child {
   flex-basis: 50%;
+  margin-right: 0;
 }
 
 .menu-item:last-child {
@@ -424,7 +429,7 @@ img {
   position: absolute;
   content: "01";
   top: -31px;
-  right: -45px;
+  right: -20px;
   font-family: Gilroy;
   font-style: normal;
   font-weight: 800;
@@ -473,7 +478,7 @@ img {
 
 .slider-item-content {
 
-  padding: 79px 0 0 40px;
+  padding: 79px 0 0 20px;
 }
 
 
@@ -545,8 +550,10 @@ img {
 
 .popular-list {
   width: 1160px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  min-height: 282px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
 }
 
 .popular-list a {
@@ -554,17 +561,121 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 0.9px;
+  width: 160px;
+  display: block;
+
 
   color: var(--basic-black);
 }
 
-
 .popular-item {
-  background-color: var(--basic-yellow-special);
+  position: relative;
 }
 
 
+
+.popular-item-container {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 38px;
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-color: var(--basic-yellow-special);
+}
+
+.popular-item-container:active {
+  opacity: 0.3;
+
+}
+
+
+.popular-item-container1::before {
+  position: absolute;
+  content: "";
+
+  display: block;
+  width: 97px;
+  height: 55px;
+  background-image: url(/img/vr.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.popular-item-container2::before {
+  position: absolute;
+  content: "";
+
+  display: block;
+  width: 86px;
+  height: 117px;
+  background-image: url(/img/monopod.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popular-item-container3::before {
+  position: absolute;
+  content: "";
+
+  display: block;
+  width: 71px;
+  height: 87px;
+  background-image: url(/img/camera.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popular-item-container4::before {
+  position: absolute;
+  content: "";
+
+  display: block;
+  width: 107px;
+  height: 65px;
+  background-image: url(/img/fitnes-tracker.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popular-item-container5::before {
+  position: absolute;
+  content: "";
+
+  display: block;
+  width: 56px;
+  height: 98px;
+  background-image: url(/img/smartwatch.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popular-item-container6::before {
+  position: absolute;
+  content: "";
+
+  display: block;
+  width: 132px;
+  height: 69px;
+  background-image: url(/img/quadcopter.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 /* Services */
