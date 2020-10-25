@@ -250,7 +250,7 @@ img {
   font-weight: 300;
   font-size: 15px;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--basic-black);
   border: 2px solid #000000;
   background-color: transparent;
   opacity: 0;
@@ -258,8 +258,9 @@ img {
 }
 
 .search input:focus {
-  border-bottom-color: #000000;
-  color: #000000;
+  border-bottom-color: var(--basic-black);
+  color: var(--basic-black);
+  ;
 }
 
 .search input:hover::placeholder {
@@ -439,7 +440,7 @@ img {
   top: 20px;
   width: 100px;
   height: 7px;
-  background-color: #FFFFFF;
+  background-color: var(--basic-white);
 }
 
 .slide1::before {
@@ -454,7 +455,7 @@ img {
   line-height: 219px;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: var(--basic-white);
 }
 
 .slide2::before {
@@ -469,7 +470,8 @@ img {
   line-height: 219px;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: var(--basic-white);
+  ;
 }
 
 
@@ -485,7 +487,8 @@ img {
   line-height: 219px;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: var(--basic-white);
+
 }
 
 .slider-item-current {
@@ -1222,7 +1225,7 @@ img {
   font-size: 14px;
   line-height: 19px;
 
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .number {
