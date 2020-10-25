@@ -219,6 +219,7 @@ img {
 
 .user-nav {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
@@ -277,6 +278,7 @@ img {
   color: var(--basic-black);
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   flex-basis: 50%;
 }
@@ -312,6 +314,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
 }
@@ -384,6 +387,7 @@ img {
 
   width: 72px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -565,6 +569,7 @@ img {
   width: 1160px;
   min-height: 282px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 49px;
 }
@@ -703,6 +708,18 @@ img {
   width: 1160px;
   display: flex;
   padding-top: 86px;
+  position: relative;
+}
+
+.services-container:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 277px;
+  width: 7px;
+  min-height: 320px;
+  background-color: var(--basic-black);
 }
 
 .services-item {
@@ -749,22 +766,14 @@ img {
 }
 
 
-.services-container:before {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 0;
-  left: 581px;
-  width: 7px;
-  min-height: 320px;
-  background-color: var(--basic-black);
-}
+
 
 
 
 .services-button-list {
   width: 400px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
 
@@ -874,6 +883,14 @@ img {
   position: relative;
 }
 
+.info::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: var(--basic-black);
+}
+
 .info-link,
 .contact-link {
   position: absolute;
@@ -914,6 +931,14 @@ img {
   position: relative;
 }
 
+.contact::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: var(--basic-black);
+}
+
 .contact p {
   line-height: 28px;
   color: var(--basic-black);
@@ -928,8 +953,99 @@ img {
 
 .footer {
   background-color: var(--basic-dark);
+  padding-bottom: 64px;
+  min-height: 324px;
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-user-list-wrapper {
+  display: flex;
+}
+
+.footer-logo2 svg {
+  fill: var(--basic-yellow-dark);
+}
+
+.footer-logo2 {
+  padding: 64px 0 0 0;
+  flex-grow: 1;
+  flex-grow: 1;
+  margin-bottom: 40px;
+}
+
+.adress-services-phone-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 67px;
+}
+
+.footer-user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 325px;
+  padding-top: 46px;
+  margin-bottom: 10px;
+}
+
+.footer-services-list {
+  width: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer-services-item {
+  margin-bottom: 10px;
+}
+
+.footer-services-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.socials-item {
+  margin-bottom: 10px;
+}
+
+
+.address {
+  width: 212px;
+  margin-right: 156px;
+
+}
+
+.phone {
+  width: 164px;
+  margin-left: auto;
+}
+
+
+.socials-logo-academy-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 136px;
+  margin-right: 485px;
+}
+
+.footer-user-item svg {
+  fill: var(--basic-yellow-dark);
+}
+
+
+/*
 .footer-wrapper {
   display: grid;
   grid-template-columns: 3.5fr 5.5fr 4fr;
@@ -945,9 +1061,7 @@ img {
   grid-area: logo;
 }
 
-.footer-logo2 svg {
-  fill: var(--basic-yellow-dark);
-}
+
 
 .footer-user-list {
   grid-area: user;
@@ -972,18 +1086,36 @@ img {
 .footer-logo-academy {
   grid-area: html;
 }
+*/
+
+
 
 .footer-user-list a {
+  display: flex;
   color: rgba(255, 255, 255, 0.7);
+  align-items: center;
 }
 
 .footer-user-list a:hover {
-  color: var(--basic-white);
+  color: rgba(255, 255, 255, 1);
 }
 
 .footer-user-list a:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.footer-login-link:hover svg,
+.footer-compare-link:hover svg,
+.footer-basket-link:hover svg {
+  opacity: 0.6;
+}
+
+.footer-login-link:active svg,
+.footer-compare-link:active svg,
+.footer-basket-link:active svg {
+  opacity: 0.3;
+}
+
 
 .address,
 .phone {
