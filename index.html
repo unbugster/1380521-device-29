@@ -107,10 +107,10 @@
   </header>
 
 
-  <main class="main container">
+  <main class="main ">
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
 
-    <section class="slider">
+    <section class="slider container">
       <div class="slider-container">
         <h2 class="visually-hidden">Слайдер</h2>
 
@@ -207,7 +207,7 @@
       </div>
     </section>
 
-    <section class="popular">
+    <section class="popular container">
       <h2 class="visually-hidden">Популярные товары</h2>
 
       <ul class="popular-list  clear-list">
@@ -252,21 +252,16 @@
 
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
-      <div class="services-container">
-        <ul class="services-button-list clear-list">
-          <li class="services-button-item">
-            <button class="services-button button" type="button">Доставка</button>
-          </li>
-          <li class="services-button-item">
-            <button class="services-button button" type="button">Гарантия</button>
-          </li>
-          <li class="services-button-item">
-            <button class="services-button button" type="button">Кредит</button>
-          </li>
-        </ul>
+      <div class="services-container container">
+
+        <div class="services-button-list clear-list">
+          <button class="services-button button services-button-current" type="button">Доставка</button>
+          <button class="services-button button" type="button">Гарантия</button>
+          <button class="services-button button" type="button">Кредит</button>
+        </div>
 
         <ul class="services-list clear-list">
-          <li class="services-item">
+          <li class="services-item services-item1 services-item-current">
             <h3 class="services-item-title title">Доставка</h3>
             <p class="services-item-text">
               Мы с удовольствием доставим ваш товар прямо к вашему
@@ -274,14 +269,14 @@
               заработаем, поднимая его на ваш этаж.
             </p>
           </li>
-          <li class="services-item">
+          <li class="services-item services-item2 ">
             <h3 class="services-item-title title">Гарантия</h3>
             <p class="services-item-text">
               Если из-за возгорания купленного у нас товара у вас сгорит дом —
               не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
             </p>
           </li>
-          <li class="services-item">
+          <li class="services-item services-item3 ">
             <h3 class="services-item-title title">Кредит</h3>
             <p class="services-item-text">
               Залезть в долговую яму стало проще! Кредитные консультанты
@@ -293,7 +288,7 @@
       </div>
     </section>
 
-    <section class="logotypes">
+    <section class="logotypes container">
       <h2 class="visually-hidden">Логотипы партнеров производителей</h2>
       <ul class="logotypes-list clear-list">
         <li class="logotypes-item">
@@ -319,12 +314,12 @@
       </ul>
     </section>
 
-    <div class="contact-info">
+    <div class="contact-info container">
 
-      <section class="info">
+      <section class="info ">
         <h2 class="info-title title">О нас</h2>
         <div class="info-text">
-          <!-- Не уверен нужен ли тут див, но как то надо будет стилизовать эти параграфы-->
+
           <p>
             Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.
@@ -344,7 +339,7 @@
         <a class="info-link button" href="#">Подробнее о нас</a>
       </section>
 
-      <section class="contact">
+      <section class="contact ">
         <h2 class="contact-title title">Контакты</h2>
         <p class="contact-text">
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете

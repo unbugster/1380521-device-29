@@ -129,6 +129,8 @@ img {
 /* Button */
 
 .button {
+  display: inline-block;
+  height: 22px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -138,10 +140,27 @@ img {
   text-transform: uppercase;
 
   color: var(--basic-black);
-
-  background-color: var(--basic-yellow-dark);
+  position: relative;
   vertical-align: middle;
   cursor: pointer;
+  z-index: 1;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 8px;
+  background-color: var(--basic-yellow-dark);
+  z-index: -2;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button:hover {
+  background-color: var(--basic-yellow-dark);
 }
 
 
@@ -171,16 +190,6 @@ img {
 .popular-item-container:hover {
   background-color: var(--basic-yellow-dark);
 }
-
-
-
-
-
-.services-button:active {
-  color: var(--basic-yellow-special);
-  background-color: var(--basic-black);
-}
-
 
 
 /* Header */
@@ -231,8 +240,8 @@ img {
 }
 
 .search button {
-  font-family: Open Sans;
-  font-style: normal;
+  font-family: "Open Sans", Arial, sans-serif;
+
   font-weight: 300;
   font-size: 15px;
   text-transform: uppercase;
@@ -368,7 +377,7 @@ img {
   right: 66px;
 
   z-index: 20;
-  border: 2px solid tomato;
+
   width: 72px;
   display: flex;
   justify-content: space-between;
@@ -415,7 +424,7 @@ img {
 
 .slider::after {
   content: "";
-  right: 437px;
+  right: 460px;
 
   position: absolute;
   display: block;
@@ -584,9 +593,8 @@ img {
   background-color: var(--basic-yellow-special);
 }
 
-.popular-item-container:active {
+.popular-item-container:active::before {
   opacity: 0.3;
-
 }
 
 
@@ -680,22 +688,140 @@ img {
 
 /* Services */
 
+.services {
+  min-height: 403px;
+  position: relative;
+  background-image: linear-gradient(var(--basic-white) 115px, var(--basic-grey-light) 115px);
+  margin-bottom: 90px;
+}
+
 .services-container {
   width: 1160px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  padding-top: 86px;
+}
+
+.services-item {
+  display: none;
+  width: 760px;
+  position: relative;
+}
+
+.services-item-current {
+  display: block;
+}
+
+.services-item1::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 136px;
+  height: 164px;
+  background-image: url(/img/delivery.svg);
+  top: 0;
+  right: 0;
+}
+
+.services-item2::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 171px;
+  height: 195px;
+  background-image: url(/img/warranty.svg);
+  top: -22px;
+  right: 0;
+}
+
+.services-item3::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 156px;
+  height: 188px;
+  background-image: url(/img/credit.svg);
+  top: -25px;
+  right: 0;
+}
+
+
+.services-container:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 581px;
+  width: 7px;
+  min-height: 320px;
+  background-color: var(--basic-black);
+}
+
+
+
+.services-button-list {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.services-list {
+  width: 760px;
+}
+
+.services-item h3 {
+
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  margin-bottom: 40px;
 }
 
 .services-item p {
-
+  width: 495px;
   line-height: 28px;
   letter-spacing: 1.5px;
-
+  margin: 0;
   color: var(--basic-black);
+}
+
+.services-button {
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  min-width: 160px;
+
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  margin-bottom: 40px;
+  outline: none;
 }
 
 
 
+.services-button-list .services-button-current {
+  width: 277px;
+  height: 40px;
+  color: var(--basic-yellow-special);
+  background-color: var(--basic-black);
+  z-index: inherit;
+  text-align: left;
+  padding-left: 19px;
+  outline: none;
+  border: none;
+}
 
 
 
@@ -705,6 +831,19 @@ img {
   width: 1160px;
   display: grid;
   grid-template-columns: repeat(4, 25%);
+  margin-bottom: 90px;
+}
+
+.logotypes-item-link {
+  margin-right: 40px;
+}
+
+.logotypes-item-link img {
+  filter: grayscale(100%);
+}
+
+.logotypes-item-link img:hover {
+  filter: none;
 }
 
 /* Info */
