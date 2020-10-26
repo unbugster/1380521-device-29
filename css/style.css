@@ -407,7 +407,6 @@ img {
   content: "";
   right: 460px;
   position: absolute;
-  display: block;
   top: 20px;
   width: 100px;
   height: 7px;
@@ -564,7 +563,6 @@ img {
 .popular-item-container1::before {
   position: absolute;
   content: "";
-  display: block;
   width: 97px;
   height: 55px;
   background-image: url(../img/vr.svg);
@@ -577,7 +575,6 @@ img {
 .popular-item-container2::before {
   position: absolute;
   content: "";
-  display: block;
   width: 86px;
   height: 117px;
   background-image: url(../img/monopod.svg);
@@ -590,7 +587,6 @@ img {
 .popular-item-container3::before {
   position: absolute;
   content: "";
-  display: block;
   width: 71px;
   height: 87px;
   background-image: url(../img/camera.svg);
@@ -603,7 +599,6 @@ img {
 .popular-item-container4::before {
   position: absolute;
   content: "";
-  display: block;
   width: 107px;
   height: 65px;
   background-image: url(../img/fitnes-tracker.svg);
@@ -616,7 +611,6 @@ img {
 .popular-item-container5::before {
   position: absolute;
   content: "";
-  display: block;
   width: 56px;
   height: 98px;
   background-image: url(../img/smartwatch.svg);
@@ -629,7 +623,6 @@ img {
 .popular-item-container6::before {
   position: absolute;
   content: "";
-  display: block;
   width: 132px;
   height: 69px;
   background-image: url(../img/quadcopter.svg);
@@ -657,7 +650,6 @@ img {
 
 .services-container::before {
   position: absolute;
-  display: block;
   content: "";
   top: 0;
   left: 277px;
@@ -678,7 +670,6 @@ img {
 
 .services-item1::after {
   position: absolute;
-  display: inline-block;
   content: "";
   width: 136px;
   height: 164px;
@@ -689,7 +680,6 @@ img {
 
 .services-item2::after {
   position: absolute;
-  display: inline-block;
   content: "";
   width: 171px;
   height: 195px;
@@ -700,7 +690,6 @@ img {
 
 .services-item3::after {
   position: absolute;
-  display: inline-block;
   content: "";
   width: 156px;
   height: 188px;
@@ -755,7 +744,7 @@ img {
   outline: none;
 }
 
-.services-button-list .services-button-current {
+.services-button-current {
   width: 277px;
   height: 40px;
   color: var(--basic-yellow-special);
@@ -807,7 +796,6 @@ img {
   width: 473px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   position: relative;
 }
 
@@ -853,7 +841,6 @@ img {
   width: 560px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   position: relative;
 }
 
