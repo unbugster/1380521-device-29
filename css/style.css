@@ -235,7 +235,7 @@ img {
   border: none;
   background-color: transparent;
   padding-left: 22px;
-  background-image: url(/img/icon-search.svg);
+  background-image: url(../img/icon-search.svg);
   background-position: 0 3px;
   background-repeat: no-repeat;
   background-size: 16px 16px;
@@ -347,7 +347,7 @@ img {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background-image: url(/img/icon-plus.svg);
+  background-image: url(../img/icon-plus.svg);
   background-repeat: no-repeat;
   margin-left: 16px;
 }
@@ -617,7 +617,7 @@ img {
   display: block;
   width: 97px;
   height: 55px;
-  background-image: url(/img/vr.svg);
+  background-image: url(../img/vr.svg);
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;
@@ -634,7 +634,7 @@ img {
   display: block;
   width: 86px;
   height: 117px;
-  background-image: url(/img/monopod.svg);
+  background-image: url(../img/monopod.svg);
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;
@@ -648,7 +648,7 @@ img {
   display: block;
   width: 71px;
   height: 87px;
-  background-image: url(/img/camera.svg);
+  background-image: url(../img/camera.svg);
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;
@@ -662,7 +662,7 @@ img {
   display: block;
   width: 107px;
   height: 65px;
-  background-image: url(/img/fitnes-tracker.svg);
+  background-image: url(../img/fitnes-tracker.svg);
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;
@@ -676,7 +676,7 @@ img {
   display: block;
   width: 56px;
   height: 98px;
-  background-image: url(/img/smartwatch.svg);
+  background-image: url(../img/smartwatch.svg);
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;
@@ -690,7 +690,7 @@ img {
   display: block;
   width: 132px;
   height: 69px;
-  background-image: url(/img/quadcopter.svg);
+  background-image: url(../img/quadcopter.svg);
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;
@@ -741,7 +741,7 @@ img {
   content: "";
   width: 136px;
   height: 164px;
-  background-image: url(/img/delivery.svg);
+  background-image: url(../img/delivery.svg);
   top: 0;
   right: 0;
 }
@@ -752,7 +752,7 @@ img {
   content: "";
   width: 171px;
   height: 195px;
-  background-image: url(/img/warranty.svg);
+  background-image: url(../img/warranty.svg);
   top: -22px;
   right: 0;
 }
@@ -763,7 +763,7 @@ img {
   content: "";
   width: 156px;
   height: 188px;
-  background-image: url(/img/credit.svg);
+  background-image: url(../img/credit.svg);
   top: -25px;
   right: 0;
 }
