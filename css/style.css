@@ -281,7 +281,7 @@ img {
   margin-right: 12px;
 }
 
-.user-item:nth-child(2) {
+.user-item-compare {
   margin-left: auto;
   margin-right: 24px;
 }
@@ -893,6 +893,18 @@ img {
 
 .socials-item {
   margin-bottom: 10px;
+}
+
+.socials-item svg {
+  fill-opacity: 0.3;
+}
+
+.socials-item svg:hover {
+  fill-opacity: 0.6;
+}
+
+.socials-item svg:active {
+  fill-opacity: 0.1;
 }
 
 .address {
