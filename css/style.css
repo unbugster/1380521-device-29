@@ -186,7 +186,7 @@ img {
 
 .main-header {
   background-image: linear-gradient(var(--basic-white) 20px, var(--basic-yellow-special) 20px);
-  padding-bottom: 10px;
+  padding: 0 0 10px 0;
   margin-top: 20px;
 }
 
@@ -204,7 +204,7 @@ img {
 .user-nav {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 
 .search {
@@ -218,7 +218,6 @@ img {
 .search input {
   border: none;
   background-color: transparent;
-  padding-left: 35px;
   background-image: url(../img/icon-search.svg);
   background-position: 0 3px;
   background-repeat: no-repeat;
@@ -226,6 +225,7 @@ img {
   border-bottom: 2px solid transparent;
   outline: none;
   color: rgba(0, 0, 0, 0.3);
+  padding: 0 0 0 35px;
 }
 
 .search button {
@@ -267,9 +267,9 @@ img {
 
 .user-list a {
   color: var(--basic-black);
-  padding-left: 20px;
   display: flex;
   align-items: center;
+  padding: 0 0 0 20px;
 }
 
 .login-link svg {
@@ -279,6 +279,10 @@ img {
 .compare-link svg,
 .basket-link svg {
   margin-right: 12px;
+}
+
+.user-item {
+  margin-bottom: 10px;
 }
 
 .user-item-compare {
@@ -345,7 +349,7 @@ img {
 .slider {
   position: relative;
   background-image: linear-gradient(var(--basic-yellow-special) 129px, var(--basic-white) 129px);
-  padding-bottom: 20px;
+  padding: 0 0 20px 0;
   margin-bottom: 72px;
 }
 
@@ -366,7 +370,7 @@ img {
 .slider-item {
   display: none;
   position: relative;
-  padding-left: 21px;
+  padding: 0 0 0 21px;
 }
 
 .slider-controls {
@@ -424,19 +428,19 @@ img {
 }
 
 .slide1::before {
-  content: "01";
+  content: attr(slide-index);
   top: -17px;
   right: -20px;
 }
 
 .slide2::before {
-  content: "02";
+  content: attr(slide-index);
   top: -31px;
   right: -45px;
 }
 
 .slide3::before {
-  content: "03";
+  content: attr(slide-index);
   top: -31px;
   right: -45px;
 }
@@ -514,7 +518,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding: 0 0 20px 0;
   margin-bottom: 49px;
 }
 
@@ -608,13 +612,13 @@ img {
   position: relative;
   background-image: linear-gradient(var(--basic-white) 115px, var(--basic-grey-light) 115px);
   margin-bottom: 90px;
-  padding-bottom: 125px;
+  padding: 0 0 125px 0;
 }
 
 .services-container {
   width: 1160px;
   display: flex;
-  padding-top: 86px;
+  padding: 86px 0 0 0;
   position: relative;
 }
 
@@ -693,7 +697,7 @@ img {
 
 .services-button-list {
   width: 400px;
-  padding-top: 9px;
+  padding: 9px 0 0 0;
 }
 
 .services-button span {
@@ -718,7 +722,7 @@ img {
   color: var(--basic-yellow-special);
   background-color: var(--basic-black);
   z-index: inherit;
-  padding-right: 117px;
+  padding: 0 117px 0 0;
 }
 
 /* Logotypes */
@@ -750,7 +754,7 @@ img {
 
 .contact-title,
 .info-title {
-  padding-top: 57px;
+  padding: 57px 0 0 0;
   margin-bottom: 40px;
   letter-spacing: 0.2em;
 }
@@ -758,7 +762,7 @@ img {
 .info {
   width: 473px;
   position: relative;
-  padding-bottom: 22px;
+  padding: 0 0 22px 0;
 }
 
 .info::before {
@@ -817,7 +821,7 @@ img {
 .contact {
   width: 560px;
   position: relative;
-  padding-bottom: 22px;
+  padding: 0 0 22px 0;
 }
 
 .contact::before {
@@ -842,7 +846,7 @@ img {
 
 .footer {
   background-color: var(--basic-dark);
-  padding-bottom: 51px;
+  padding: 0 0 51px 0;
 }
 
 .logo-user-list-wrapper {
@@ -869,7 +873,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 325px;
-  padding-top: 46px;
+  padding: 46px 0 0 0;
   margin-bottom: 10px;
 }
 
