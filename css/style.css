@@ -225,7 +225,7 @@ img {
   border-bottom: 2px solid transparent;
   outline: none;
   color: rgba(0, 0, 0, 0.3);
-  padding: 0 0 0 35px;
+  padding: 0 0 9px 35px;
 }
 
 .search button {
@@ -301,6 +301,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  margin-right: -3px;
 }
 
 .menu a {
@@ -513,13 +514,17 @@ img {
 
 /* Popular */
 
-.popular-list {
+.popular {
+  margin-bottom: 49px;
   width: 1160px;
+}
+
+.popular-list {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 0 20px 0;
-  margin-bottom: 49px;
 }
 
 .popular-list a {
@@ -608,28 +613,23 @@ img {
 
 /* Services */
 
+.services-button-wrapper {
+  border-right: 7px solid var(--basic-black);
+  padding: 80px 0;
+}
+
 .services {
   position: relative;
   background-image: linear-gradient(var(--basic-white) 115px, var(--basic-grey-light) 115px);
   margin-bottom: 90px;
-  padding: 0 0 125px 0;
+  padding: 0 0 66px 0;
 }
 
 .services-container {
   width: 1160px;
   display: flex;
-  padding: 86px 0 0 0;
+  padding: 15px 0 0 0;
   position: relative;
-}
-
-.services-container::before {
-  position: absolute;
-  content: "";
-  top: 15px;
-  left: 277px;
-  width: 7px;
-  min-height: 320px;
-  background-color: var(--basic-black);
 }
 
 .services-item {
@@ -674,6 +674,7 @@ img {
 
 .services-list {
   width: 760px;
+  padding: 71px 0 0 116px;
 }
 
 .services-item h3 {
@@ -682,6 +683,7 @@ img {
   line-height: 58px;
   letter-spacing: 0.2em;
   margin-bottom: 40px;
+  padding: 0 180px 0 0;
 }
 
 .services-item p {
@@ -696,8 +698,8 @@ img {
 }
 
 .services-button-list {
-  width: 400px;
-  padding: 9px 0 0 0;
+  width: 277px;
+  padding: 0px 0 0 0;
 }
 
 .services-button span {
@@ -713,8 +715,12 @@ img {
   cursor: pointer;
   background-color: inherit;
   outline: none;
-  margin-bottom: 21px;
+
   height: 40px;
+}
+
+.services-button:not(:last-child) {
+  margin-bottom: 21px;
 }
 
 .services-button-current {
@@ -780,6 +786,7 @@ img {
   left: 0;
   width: 260px;
   text-align: center;
+  padding: 0 0 0 5px;
 }
 
 .info p {
