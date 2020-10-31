@@ -2,135 +2,168 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Каталог товаров</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="normalize.css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body class="page-body">
-
   <header class="main-header container">
     <div class="main-header-wrapper">
-      <a class="header-logo" href="index.html">
+      <a class="header-logo op-hover op-active" href="index.html">
         <img src="img/store-logo.svg" width="165" height="35" alt="Логотип интернет-магазина «Девайс»">
       </a>
 
-      <form class="search">
-        <input type="search" name="search" placeholder="Поиск по сайту">
-        <button type="submit">Поиск</button>
-      </form>
+      <div class="user-nav">
+        <form class="search">
+          <input type="search" name="search" placeholder="Поиск по сайту">
+          <button type="submit">Поиск</button>
+        </form>
 
-
-      <ul class="user-list op-hover op-active clear-list">
-        <li class="user-item">
-          <a class="user-link" href="#">Валентин Петухов</a>
-        </li>
-        <li class="user-item">
-          <a class="logout-link" href="#">Выйти</a>
-        </li>
-        <li class="user-item">
-          <a class="compare-link" href="#">Сравнить</a>
-        </li>
-        <li class="user-item">
-          <a class="basket-link" href="#">Корзина</a>
-        </li>
-      </ul>
-
-      <nav class="nav">
-        <ul class="menu op-hover op-active clear-list">
-          <li class="menu-item">
-            <a class="menu-item-link" href="#">Каталог товаров</a>
-            <ul class="submenu clear-list">
-              <li class="submenu-item">
-                <a class="submenu-item-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-item-link submenu-item-link-active" href="catalog.html">Моноподы для селфи</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-item-link" href="#">Экшн-камеры</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-item-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-item-link" href="#">Умные часы</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-item-link" href="#">Квадрокоптер</a>
-              </li>
-            </ul>
+        <ul class="user-list op-hover op-active clear-list">
+          <li class="user-item">
+            <a class="login-link" href="#">
+              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.50008 2.33333C7.69716 2.33333 8.66675 3.3775 8.66675 4.66666C8.66675 5.95583 7.69716 7 6.50008 7C5.303 7 4.33341 5.95583 4.33341 4.66666C4.33341 3.3775 5.303 2.33333 6.50008 2.33333ZM6.50008 11.6667C6.50008 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72091 7.58333 6.50008 7.58333C4.27925 7.58333 2.16675 9.1 2.16675 10.5C2.16675 11.6667 6.50008 11.6667 6.50008 11.6667Z"
+                  fill="black" />
+              </svg>
+              <span>Валентин Петухов</span>
+            </a>
           </li>
-          <li class="menu-item">
-            <a class="menu-item-link" href="#">Доставка</a>
+          <li class="user-item user-item-compare">
+            <a class="exit-link" href="#">
+              <span>Выйти</span>
+            </a>
           </li>
-          <li class="menu-item">
-            <a class="menu-item-link" href="#">Гарантия</a>
+          <li class="user-item user-item-compare">
+            <a class="compare-link" href="#">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.91675 5.36667H4.66675V11.0833H2.91675V5.36667ZM6.18342 2.91667H7.81675V11.0833H6.18342V2.91667ZM9.45008 7.58334H11.0834V11.0833H9.45008V7.58334Z"
+                  fill="black" />
+              </svg>
+              <span>Сравнить</span>
+            </a>
           </li>
-          <li class="menu-item">
-            <a class="menu-item-link" href="#">Контакты</a>
+          <li class="user-item">
+            <a class="basket-link" href="#">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z"
+                    fill="#231F20" />
+                  <path
+                    d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
+                    fill="#231F20" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="10" height="10" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Корзина</span>
+            </a>
           </li>
         </ul>
-      </nav>
+      </div>
+
+
+      <ul class="menu  clear-list">
+        <li class="menu-item">
+          <a class="menu-item-link menu-item-link-stuff" href="#">
+            <span>Каталог товаров</span>
+          </a>
+          <ul class="submenu clear-list">
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="catalog.html">Моноподы для селфи</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Умные часы</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="#"><span>Доставка</span></a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="#"><span>Гарантия</span></a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-link" href="#">Контакты</a>
+        </li>
+      </ul>
     </div>
   </header>
 
-  <main class="container catalog-container">
-    <h1 class="main-title title">Моноподы для селфи</h1>
+  <main class="main-container">
+    <div class="breadcrumbs catalog-container">
+      <h1 class=" main-title title">Моноподы для селфи</h1>
 
-    <!--Хлебные крошки-->
+      <ul class="breadcrumbs-list clear-list">
+        <li class="breadcrumbs-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-item-active">Моноподы для селфи</a>
+        </li>
+      </ul>
+    </div>
 
-    <ul class="breadcrumbs-list clear-list">
-      <li class="breadcrumbs-item">
-        <a href="index.html">Главная</a>
-      </li>
-      <li class="breadcrumbs-item">
-        <a href="">Каталог товаров</a>
-      </li>
-      <li class="breadcrumbs-item">
-        <a class="breadcrumbs-item-active">Моноподы для селфи</a>
-      </li>
-    </ul>
+    <section class="catalog">
+      <div class="catalog-header">
+        <div class="filter container">
+          <div class="filter-header">
+            <h2 class="filter-title catalog-title">Фильтр:</h2>
+          </div>
+          <div class="sorting-header">
+            <h2 class="sorting-header-title catalog-title">Сортировка:</h2>
 
-    <div class="filter-sorting-wrapper">
+            <ul class="sorting-list clear-list">
+              <li class="sorting-item">
+                <a class="sorting-link sorting-link-active">По цене</a>
+              </li>
+              <li class="sorting-item">
+                <a class="sorting-link" href="">По типу</a>
+              </li>
+              <li class="sorting-item">
+                <a class="sorting-link" href="">По популярности</a>
+              </li>
+            </ul>
 
-      <section class="filter">
-        <h2 class="filter-title catalog-title">Фильтр:</h2>
-        <!-- Здесь будет форма фильтра -->
-      </section>
-
-      <section class="sorting">
-        <div class="sorting-wrapper">
-          <h2 class="sorting-title catalog-title">Сортировка:</h2>
-          <ul class="sorting-list clear-list">
-            <li class="sorting-item">
-              <a class="sorting-link sorting-link-active">По цене</a>
-            </li>
-            <li class="sorting-item">
-              <a class="sorting-link" href="">По типу</a>
-            </li>
-            <li class="sorting-item">
-              <a class="sorting-link" href="">По популярности</a>
-            </li>
-          </ul>
-
-          <ul class="updown-list clear-list">
-            <li class="updown-item">
-              <a class="updown-link up-link" href="">
-                <img src="https://via.placeholder.com/11x10" alt="По возрастанию" width="11" height="10">
-              </a>
-            </li>
-            <li class="updown-item">
-              <a class="updown-link down-link updown-link-active" href="">
-                <img src="https://via.placeholder.com/11x10" alt="По убыванию" width="11" height="10">
-              </a>
-            </li>
-          </ul>
+            <ul class="updown-list clear-list">
+              <li class="updown-item">
+                <a class="updown-link up-link" href="">
+                </a>
+              </li>
+              <li class="updown-item">
+                <a class="updown-link down-link updown-link-active" href="">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
 
+
+      <div class="catalog-content ">
         <ul class="goods-list clear-list">
           <li class="goods-item">
             <img src="img/noob-selfie-stick.jpg" width="360" height="380" alt="">
@@ -190,8 +223,8 @@
           </li>
         </ul>
 
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
 
