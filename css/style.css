@@ -1120,6 +1120,7 @@ img {
 }
 
 .filter-item {
+  margin: 0 0 38px 0;
   padding: 0;
   width: 200px;
   border: none;
@@ -1131,16 +1132,80 @@ img {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
+/* не надо наверное */
+.range-filter {
+  width: 260px;
+  margin-top: 38px;
+}
+
+.range-controls {
+  position: relative;
+  height: 44px;
+  padding-top: 21px;
+  padding-bottom: 8px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls label {
+  border: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, .2);
+  background-color: transparent;
+}
+
+.price-controls input {
+  width: 55px;
+  border: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, .2);
+  background-color: transparent;
+}
 
 .filter-checkbox-label {
   font-size: 14px;
   line-height: 19px;
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   user-select: none;
 }
 
@@ -1169,6 +1234,10 @@ img {
   user-select: none;
 }
 
+.filter-radio-label:last-child {
+  margin-bottom: 0;
+}
+
 .filter-radio-input+span {
   width: 24px;
   height: 24px;
@@ -1190,6 +1259,11 @@ img {
   margin: auto;
 
 }
+
+.form-button {
+  margin-top: 12px;
+}
+
 
 .catalog-header .filter>div {
   padding-top: 23px;
@@ -1363,6 +1437,14 @@ img {
   display: flex;
   padding: 15px 10px;
   margin-bottom: 78px;
+}
+
+.pagination-item:first-child {
+  margin-right: auto;
+}
+
+.pagination-item:last-child {
+  margin-left: auto;
 }
 
 .pagination-list a {
