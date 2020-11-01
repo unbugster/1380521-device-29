@@ -1017,7 +1017,6 @@ img {
 
 /* _________________________________________CATALOG */
 
-
 .catalog-main-header {
   padding-bottom: 25px;
 }
@@ -1036,13 +1035,11 @@ img {
   cursor: default;
 }
 
-
 .main-title {
   margin: 44px 0 30px 0;
 }
 
 /* Breadcrumbs */
-
 
 .breadcrumbs {
   padding-right: 10px;
@@ -1060,7 +1057,6 @@ img {
   padding-right: 40px;
 }
 
-
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -1071,7 +1067,6 @@ img {
   transform: rotate(45deg);
   top: 8px;
   right: 18px;
-
 }
 
 .breadcrumbs-item a {
@@ -1089,7 +1084,6 @@ img {
 .breadcrumbs-item a:active {
   opacity: 0.1;
 }
-
 
 .catalog-title {
   font-family: "Gilroy", Arial, sans-serif;
@@ -1135,7 +1129,6 @@ img {
   margin-bottom: 30px;
 }
 
-/* не надо наверное */
 .range-filter {
   width: 260px;
   margin-top: 38px;
@@ -1222,7 +1215,6 @@ img {
   background-image: url(../img/ok.svg);
   background-repeat: no-repeat;
   background-position: center center;
-
 }
 
 .filter-radio-label {
@@ -1248,7 +1240,6 @@ img {
   display: flex;
 }
 
-
 .filter-radio-input:checked+span::before {
   content: "";
   width: 8px;
@@ -1257,13 +1248,12 @@ img {
   background-color: var(--basic-black);
   border-radius: 50%;
   margin: auto;
-
 }
 
 .form-button {
   margin-top: 12px;
+  width: 200px;
 }
-
 
 .catalog-header .filter>div {
   padding-top: 23px;
@@ -1282,7 +1272,6 @@ img {
 .sorting-item:last-child {
   margin-right: 0;
 }
-
 
 .sorting-item a {
   font-weight: 400;
@@ -1360,7 +1349,6 @@ img {
 .goods-item {
   position: relative;
 }
-
 
 .item-action {
   position: absolute;
