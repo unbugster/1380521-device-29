@@ -167,7 +167,71 @@
 
       <div class="catalog-content">
         <div class="catalog-content-container container">
-          <div class="filter-form"></div>
+          <div class="filter-form-wrapper">
+            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset class="filter-item">
+                <p>Стоимость</p>
+              </fieldset>
+              <fieldset class="filter-item">
+                <p>Цвет</p>
+                <ul class="filter-checkbox-list clear-list">
+                  <li class="filter-checkbox-item">
+
+                    <label class="filter-checkbox-label" for="filter-check1">
+                      <input class="filter-checkbox-input  visually-hidden" id="filter-check1" type="checkbox"
+                        name="black" checked>
+                      <span></span>Черный</label>
+                  </li>
+                  <li class="filter-checkbox-item">
+
+                    <label class="filter-checkbox-label" for="filter-check2">
+                      <input class="filter-checkbox-input  visually-hidden" id="filter-check2" type="checkbox"
+                        name="white">
+                      <span></span>
+                      Белый</label>
+                  </li>
+                  <li class="filter-checkbox-item">
+
+                    <label class="filter-checkbox-label" for="filter-check3">
+                      <input class="filter-checkbox-input  visually-hidden" id="filter-check3" type="checkbox"
+                        name="blue" checked>
+                      <span></span>
+                      Синий</label>
+                  </li>
+                  <li class="filter-checkbox-item">
+
+                    <label class="filter-checkbox-label" for="filter-check4"><input
+                        class="filter-checkbox-input  visually-hidden" id="filter-check4" type="checkbox" name="red"
+                        checked>
+                      <span></span>
+                      Красный</label>
+                  </li>
+                  <li class="filter-checkbox-item">
+
+                    <label class="filter-checkbox-label" for="filter-check5"><input
+                        class="filter-checkbox-input  visually-hidden" id="filter-check5" type="checkbox" name="pink">
+                      <span></span>
+                      Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-item">
+                <p>Bluetooth</p>
+
+                <label class="filter-radio-label" for="filter-control1">
+                  <input class="filter-radio-input  visually-hidden" id="filter-control1" type="radio" name="bluetooth"
+                    value="yes" checked>
+                  <span></span>
+                  Есть</label>
+                <label class="filter-radio-label" for="filter-control2">
+                  <input class="filter-radio-input  visually-hidden" id="filter-control2" type="radio" name="bluetooth"
+                    value="no">
+                  <span></span>Нет</label>
+              </fieldset>
+              <button class="form-button button" type="submit">Показать</button>
+            </form>
+            </form>
+          </div>
 
           <div class="catalog-products">
             <ul class="goods-list clear-list">
@@ -203,7 +267,7 @@
                   <a href="">
                     <h3 class="goods-item-title">Непотопляемая селфи&#8209;палка</h3>
                   </a>
-                  <span class="goods-item-price">2 500 руб.</span>
+                  <span class="goods-item-price">1 500 руб.</span>
                 </div>
                 <div class="item-action">
                   <button class="basket-btn button" type="button">В корзину</button>
@@ -216,7 +280,7 @@
                   <a href="">
                     <h3 class="goods-item-title">Селфи-палка «Следуй за мной»</h3>
                   </a>
-                  <span class="goods-item-price">4 900 руб.</span>
+                  <span class="goods-item-price">1 900 руб.</span>
                 </div>
                 <div class="item-action">
                   <button class="basket-btn button" type="button">В корзину</button>
