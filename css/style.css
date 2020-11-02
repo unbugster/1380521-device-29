@@ -381,7 +381,7 @@ img {
   position: absolute;
   bottom: 181px;
   right: 88px;
-  z-index: 20;
+  z-index: 3;
   width: 72px;
   display: flex;
   flex-wrap: wrap;
@@ -1447,3 +1447,72 @@ img {
 }
 
 /* Footer */
+
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light);
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  display: ;
+  z-index: 3;
+}
+
+.modal-map {
+  width: 994px;
+  height: 593px;
+  border: none;
+}
+
+.modal-map img {
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #f0c52e;
+  opacity: .5;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 14px;
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
