@@ -463,6 +463,8 @@
     </div>
   </footer>
 
+
+  <!--Карта-->
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe
@@ -473,32 +475,28 @@
   </section>
 
   <!-- Всплывающая форма обратной связи -->
-  <!--
-   <section class="modal modal-login">
-  <h2>Личный кабинет</h2>
-  <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
-  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
-      <label class="visually-hidden" for="login-login">Логин</label>
-      <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
-    </p>
-    <p>
-      <label class="visually-hidden" for="login-password">Пароль</label>
-      <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="••••••••">
-    </p>
-    <p class="login-help">
-      <label class="login-checkbox">
-        <input class="visually-hidden" type="checkbox" name="remember">
-        <span class="checkbox-indicator"></span>
-        Запомните меня
-      </label>
-      <a class="restore" href="#">Я забыл пароль!</a>
-    </p>
-    <button class="button" type="submit">Войти</button>
-  </form>
-  <button class="modal-close" type="button">Закрыть</button>
-</section>
--->
+  <section class="modal modal-write-us">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-input-wrapper">
+        <div class="wrapper-column">
+          <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+          <input type="text" class="write-as-input" name="name" id="write-us-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="wrapper-column">
+          <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+          <input type="email" class="write-as-input" name="email" id="write-us-email" placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="wrapper-column text-wrapper-column">
+        <label class="write-us-label" for="write-us-text">Текст письма:</label>
+        <textarea class="write-as-textarea" name="text" id="write-us-text" placeholder="В свободной форме"></textarea>
+      </div>
+      <button type="submit" class="button button-write-us">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+
 </body>
 
 </html>
