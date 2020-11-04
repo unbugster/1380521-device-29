@@ -154,18 +154,19 @@
               </li>
             </ul>
 
-            <ul class="updown-list clear-list">
-              <li class="updown-item">
-                <a class="updown-link up-link" href="">
-                  По возрастанию
-                </a>
-              </li>
-              <li class="updown-item">
-                <a class="updown-link down-link updown-link-active" href="">
-                  По убыванию
-                </a>
-              </li>
-            </ul>
+            <div class="button-sort">
+              <a class="button-sort-item button-sort-item-up" id="icon-up-dir" href="#" aria-label="По возрастанию">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 4L3 4L8.5 14L14 4Z" fill="black" />
+                </svg>
+              </a>
+              <a class="button-sort-item button-sort-item-down" id="icon-down-dir" href="#" aria-label="По убыванию">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 4L3 4L8.5 14L14 4Z" fill="black" />
+                </svg>
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -175,7 +176,7 @@
         <div class="catalog-content-container container">
           <div class="filter-form-wrapper">
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-              <fieldset class="filter-item filter-item-price">
+              <fieldset class="filter-item">
                 <p>Стоимость</p>
                 <div class="range-filter">
                   <div class="range-controls">
@@ -223,22 +224,23 @@
                   </li>
                   <li class="filter-checkbox-item">
 
-                    <label class="filter-checkbox-label" for="filter-check4"><input
-                        class="filter-checkbox-input  visually-hidden" id="filter-check4" type="checkbox" name="red"
-                        checked>
+                    <label class="filter-checkbox-label" for="filter-check4">
+                      <input class="filter-checkbox-input  visually-hidden" id="filter-check4" type="checkbox"
+                        name="red" checked>
                       <span></span>
                       Красный</label>
                   </li>
                   <li class="filter-checkbox-item">
 
-                    <label class="filter-checkbox-label" for="filter-check5"><input
-                        class="filter-checkbox-input  visually-hidden" id="filter-check5" type="checkbox" name="pink">
+                    <label class="filter-checkbox-label" for="filter-check5">
+                      <input class="filter-checkbox-input  visually-hidden" id="filter-check5" type="checkbox"
+                        name="pink">
                       <span></span>
                       Розовый</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-item filter-item-bluetooth">
+              <fieldset class="filter-item ">
                 <p>Bluetooth</p>
 
                 <label class="filter-radio-label" for="filter-control1">
