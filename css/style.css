@@ -139,6 +139,7 @@ img {
   border: none;
   background: none;
   padding: 0;
+  outline: none;
 }
 
 .button::before {
@@ -398,6 +399,7 @@ img {
   border: 2px solid var(--basic-black);
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .slider-controls .current:after {
@@ -1490,6 +1492,7 @@ img {
   border-radius: 50%;
   border: 0;
   cursor: pointer;
+  outline: none;
 }
 
 .modal-close::before,
@@ -1519,7 +1522,7 @@ img {
   opacity: 0.3;
 }
 
-/*modal Write-us */
+/* Write-us */
 .modal-write-us {
   background-color: var(--basic-white);
   padding: 92px 100px 69px;
@@ -1558,7 +1561,6 @@ img {
 
 .modal-write-us input,
 .modal-write-us textarea {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 16px 20px;
 }
@@ -1573,8 +1575,6 @@ img {
 .write-us-form textarea,
 .write-us-form textarea:focus {
   font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: rgba(0, 0, 0, 0.4);
