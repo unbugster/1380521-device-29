@@ -23,7 +23,7 @@
 
         <ul class="user-list op-hover op-active clear-list">
           <li class="user-item">
-            <a class="login-link" href="#">
+            <a class="login-link" href="/profile">
               <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M6.50008 2.33333C7.69716 2.33333 8.66675 3.3775 8.66675 4.66666C8.66675 5.95583 7.69716 7 6.50008 7C5.303 7 4.33341 5.95583 4.33341 4.66666C4.33341 3.3775 5.303 2.33333 6.50008 2.33333ZM6.50008 11.6667C6.50008 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72091 7.58333 6.50008 7.58333C4.27925 7.58333 2.16675 9.1 2.16675 10.5C2.16675 11.6667 6.50008 11.6667 6.50008 11.6667Z"
@@ -71,31 +71,37 @@
       </div>
 
 
-      <ul class="menu  clear-list">
+      <ul class="menu clear-list">
         <li class="menu-item">
           <a class="menu-item-link menu-item-link-stuff" href="#">
             <span>Каталог товаров</span>
           </a>
-          <ul class="submenu clear-list">
-            <li class="submenu-item">
-              <a class="submenu-item-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-item-link" href="catalog.html">Моноподы для селфи</a>
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-item-link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-item-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-item-link" href="#">Умные часы</a>
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-item-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+          <div class="submenu main-header-wrapper op-hover op-active  clear-list">
+            <ul class="submenu-list clear-list">
+              <li class="submenu-item">
+                <a class="submenu-item-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-item-link" href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-item-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="submenu-list clear-list">
+              <li class="submenu-item">
+                <a class="submenu-item-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-item-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="submenu-list clear-list">
+              <li class="submenu-item">
+                <a class="submenu-item-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="menu-item">
           <a class="menu-item-link" href="#"><span>Доставка</span></a>
@@ -169,7 +175,7 @@
         <div class="catalog-content-container container">
           <div class="filter-form-wrapper">
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-              <fieldset class="filter-item">
+              <fieldset class="filter-item filter-item-price">
                 <p>Стоимость</p>
                 <div class="range-filter">
                   <div class="range-controls">
@@ -189,7 +195,7 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="filter-item">
+              <fieldset class="filter-item filter-item-color">
                 <p>Цвет</p>
                 <ul class="filter-checkbox-list clear-list">
                   <li class="filter-checkbox-item">
@@ -232,7 +238,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-item">
+              <fieldset class="filter-item filter-item-bluetooth">
                 <p>Bluetooth</p>
 
                 <label class="filter-radio-label" for="filter-control1">
@@ -246,7 +252,6 @@
                   <span></span>Нет</label>
               </fieldset>
               <button class="form-button button" type="submit">Показать</button>
-            </form>
             </form>
           </div>
 
@@ -266,7 +271,7 @@
                 </div>
               </li>
               <li class="goods-item">
-                <img src="img/pro-selfie-stick.jpg" width=" 360" height="380" alt="">
+                <img src="img/pro-selfie-stick.jpg" width="360" height="380" alt="">
                 <div class="goods-item-info">
                   <a href="">
                     <h3 class="goods-item-title">Профессиональная селфи&#8209;палка</h3>
@@ -291,7 +296,7 @@
                   <button class="compare-btn" type="button">Добавить к сравнению</button>
                 </div>
               </li>
-              <li class="goods-item">
+              <li class="goods-item new">
                 <img src="img/followme-selfie-stick.jpg" width="360" height="380" alt="">
                 <div class="goods-item-info">
                   <a href="">
@@ -326,6 +331,8 @@
             </ul>
 
           </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -369,14 +376,14 @@
           <li class="footer-user-item">
             <a class="footer-basket-link basket-link" href="#">
               <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
+                <g clip-path="url(#clip1)">
                   <path
                     d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z" />
                   <path
                     d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z" />
                 </g>
                 <defs>
-                  <clipPath id="clip0">
+                  <clipPath id="clip1">
                     <rect width="10" height="10" fill="white" />
                   </clipPath>
                 </defs>
