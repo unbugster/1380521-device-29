@@ -261,6 +261,7 @@ img {
   color: rgba(0, 0, 0, 0.3);
   padding: 0 0 9px 35px;
   width: 356px;
+  line-height: 20px;
 }
 
 .search button {
@@ -278,6 +279,16 @@ img {
   outline: none;
 }
 
+.search input:focus:not(:placeholder-shown) {
+  border-bottom-color: var(--basic-black);
+  color: var(--basic-black);
+}
+
+.search input:focus:not(:placeholder-shown)~button {
+  opacity: 1;
+  visibility: visible;
+}
+
 .search button:hover {
   background-color: var(--basic-black);
   color: var(--basic-white);
@@ -292,17 +303,15 @@ img {
   color: rgba(255, 255, 255, 0.3);
   visibility: visible;
   background-color: var(--basic-black);
-}
-
-.search input:focus {
-  border-bottom-color: var(--basic-black);
-  color: var(--basic-black);
-}
-
-.search input:focus~button {
   opacity: 1;
-  visibility: visible;
 }
+
+
+
+
+
+
+
 
 .search input:hover::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
