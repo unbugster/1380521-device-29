@@ -550,19 +550,19 @@ img {
 }
 
 .slide1::before {
-  content: attr(slide-index);
+  content: attr(data-slide);
   top: -17px;
   right: -20px;
 }
 
 .slide2::before {
-  content: attr(slide-index);
+  content: attr(data-slide);
   top: -31px;
   right: -45px;
 }
 
 .slide3::before {
-  content: attr(slide-index);
+  content: attr(data-slide);
   top: -31px;
   right: -45px;
 }
