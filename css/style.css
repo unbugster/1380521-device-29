@@ -873,6 +873,10 @@ img {
   padding: 0 117px 0 0;
 }
 
+.services-button-current:hover {
+  background-color: var(--basic-black);
+}
+
 /* Logotypes */
 
 .logotypes-list {
