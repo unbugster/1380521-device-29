@@ -1414,6 +1414,8 @@ img {
   cursor: pointer;
 }
 
+
+
 .filter-checkbox-input+span {
   display: flex;
   align-items: center;
@@ -1422,7 +1424,7 @@ img {
 
 .filter-checkbox-input+span::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 24px;
   height: 24px;
   border: 2px solid var(--basic-black);
