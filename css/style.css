@@ -906,11 +906,13 @@ img {
 .logotypes-item-link img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  opacity: 0.2;
 }
 
 .logotypes-item-link img:hover {
   -webkit-filter: none;
   filter: none;
+  opacity: 1;
 }
 
 /* Info */
