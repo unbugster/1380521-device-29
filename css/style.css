@@ -231,6 +231,8 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 28px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1417,7 +1419,11 @@ img {
 
 
 .filter-checkbox-input+span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-right: 5px;
 }
@@ -1476,7 +1482,11 @@ img {
 }
 
 .filter-radio-input+span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
 }
