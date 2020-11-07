@@ -1114,6 +1114,7 @@ img {
 .address {
   width: 212px;
   margin-right: 156px;
+  font-style: normal;
 }
 
 .phone {
@@ -1671,31 +1672,14 @@ img {
 }
 
 .goods-item.new::before {
-  content: "new";
+  content: "";
   position: absolute;
   top: 29px;
   right: 29px;
   z-index: 3;
   width: 62px;
   height: 62px;
-  padding: 23px 18px 24px 17px;
-  border: 3px solid rgba(0, 0, 0, .1);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 50%;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.3);
+  background-image: url(../img/new-shape.svg);
 }
 
 .item-action {
@@ -1762,6 +1746,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.8px;
+  padding-top: 2px;
 }
 
 .pagination-list {
@@ -1790,7 +1775,7 @@ img {
 
 .pagination-list a {
   color: var(--basic-black);
-  padding: 25px 15px;
+  padding: 25px 14px;
   display: block;
 }
 
@@ -1830,6 +1815,10 @@ img {
   height: 550px;
   border: none;
   display: none;
+}
+
+.modal-map iframe {
+  border: 0;
 }
 
 .modal-map img {
