@@ -972,6 +972,8 @@ img {
 .info-item {
   margin: 0 0 15px 0;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .info-item::before {
@@ -1427,10 +1429,6 @@ img {
   cursor: pointer;
 }
 
-.filter-checkbox-list:focus {
-  background-color: red;
-  border: 2px solid green;
-}
 
 .filter-checkbox-input+span {
   display: -webkit-box;
