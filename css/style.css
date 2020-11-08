@@ -25,7 +25,7 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
-  src: local("Gilroy"),
+  src: local("Gilroy Extra Bold"),
     url("../fonts/gilroyextrabold.woff2") format("woff2"),
     url("../fonts/gilroyextrabold.woff") format("woff");
 }
@@ -43,7 +43,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
-  src: local("Open Sans"),
+  src: local("Open Sans Light"),
     url("../fonts/opensanslight.woff2") format("woff2"),
     url("../fonts/opensanslight.woff") format("woff");
 }
@@ -67,7 +67,7 @@
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -216,11 +216,13 @@ img {
   cursor: pointer;
 }
 
-.header-logo:hover {
+.header-logo:hover,
+.footer-logo-academy:hover {
   opacity: 0.6;
 }
 
-.header-logo:active {
+.header-logo:active,
+.footer-logo-academy:active {
   opacity: 0.3;
 }
 
@@ -244,6 +246,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 440px;
+}
+
+.search label {
+  display: flex;
 }
 
 .search input {
@@ -412,7 +418,7 @@ img {
 
 .menu-item-link-stuff::after {
   content: "";
-  display: inline-block;
+  display: block;
   width: 22px;
   height: 22px;
   background-image: url(../img/icon-plus.svg);
@@ -970,7 +976,7 @@ img {
 
 .info-item::before {
   margin-right: 24px;
-  display: inline-block;
+  display: block;
   content: "";
   width: 8px;
   height: 8px;
@@ -1421,7 +1427,10 @@ img {
   cursor: pointer;
 }
 
-
+.filter-checkbox-list:focus {
+  background-color: red;
+  border: 2px solid green;
+}
 
 .filter-checkbox-input+span {
   display: -webkit-box;
@@ -1498,7 +1507,7 @@ img {
 
 .filter-radio-input+span::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 24px;
   height: 24px;
   border: 2px solid var(--basic-black);

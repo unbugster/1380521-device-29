@@ -17,9 +17,11 @@
       </a>
 
       <div class="user-nav">
-        <form class="search">
-          <input type="text" name="search" placeholder="Поиск по сайту">
-          <button type="submit">Поиск</button>
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <label for="search">
+            <input type="text" id="search" name="search" placeholder="Поиск по сайту">
+            <button type="submit">Поиск</button>
+          </label>
         </form>
 
         <ul class="user-list op-hover op-active clear-list">
@@ -200,10 +202,10 @@
 
                   <div class="price-controls">
                     <label class="min-price">
-                      от <input type="number" name="min-price" value="0">
+                      от <input type="text" name="min-price" value="0">
                     </label>
                     <label class="max-price">
-                      до <input type="number" name="max-price" value="5000">
+                      до <input type="text" name="max-price" value="5000">
                     </label>
                   </div>
                 </div>
@@ -211,7 +213,7 @@
 
               <fieldset class="filter-item filter-item-color">
                 <p>Цвет</p>
-                <ul class="filter-checkbox-list clear-list">
+                <ul class="filter-checkbox-list clear-list" tabindex="0">
                   <li class="filter-checkbox-item">
 
                     <label class="filter-checkbox-label" for="filter-check1">
@@ -276,7 +278,7 @@
 
             <ul class="goods-list clear-list">
               <li class="goods-item">
-                <img src="img/noob-selfie-stick.jpg" width="360" height="380" alt="">
+                <img src="img/noob-selfie-stick.jpg" width="360" height="380" alt="Простая селфи-палка из пластика">
                 <div class="goods-item-info">
                   <a href="">
                     <h3 class="goods-item-title">Любительская селфи&#8209;палка</h3>
@@ -289,7 +291,8 @@
                 </div>
               </li>
               <li class="goods-item">
-                <img src="img/pro-selfie-stick.jpg" width="360" height="380" alt="">
+                <img src="img/pro-selfie-stick.jpg" width="360" height="380"
+                  alt="Фирменная селфи-палка из качественных материалов">
                 <div class="goods-item-info">
                   <a href="">
                     <h3 class="goods-item-title">Профессиональная селфи&#8209;палка</h3>
@@ -302,7 +305,8 @@
                 </div>
               </li>
               <li class="goods-item">
-                <img src="img/waterproof-selfie-stick.jpg" width="360" height="380" alt="">
+                <img src="img/waterproof-selfie-stick.jpg" width="360" height="380"
+                  alt="Прорезиненная селфи-палка с водонепроницаемым кейсом">
                 <div class="goods-item-info">
                   <a href="">
                     <h3 class="goods-item-title">Непотопляемая селфи&#8209;палка</h3>
@@ -315,8 +319,9 @@
                 </div>
               </li>
               <li class="goods-item new">
-                <img src="img/followme-selfie-stick.jpg" width="360" height="380" alt="">
-                <div class="goods-item-info">
+                <img src="img/followme-selfie-stick.jpg" width="360" height="380"
+                  alt="Селфи-палка с прикрепленным макетом человеческой руки">
+                <div class=" goods-item-info">
                   <a href="">
                     <h3 class="goods-item-title">Селфи-палка «Следуй за мной»</h3>
                   </a>
