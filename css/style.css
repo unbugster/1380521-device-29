@@ -149,6 +149,7 @@ img {
   outline: none;
 }
 
+
 .button::before {
   position: absolute;
   content: "";
@@ -1412,7 +1413,7 @@ img {
 }
 
 .filter-checkbox-label {
-  width: 180px;
+  width: 200px;
   font-size: 14px;
   line-height: 19px;
   display: -webkit-box;
@@ -1429,7 +1430,6 @@ img {
   cursor: pointer;
 }
 
-
 .filter-checkbox-input+span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1438,6 +1438,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   padding-right: 5px;
+  width: 200px;
 }
 
 .filter-checkbox-input+span::before {
@@ -1457,6 +1458,10 @@ img {
   background-position: center center;
 }
 
+.filter-checkbox-input:focus+span,
+.filter-radio-input:focus+span {
+  background-color: rgba(218, 218, 218, 0.315);
+}
 
 .filter-checkbox-input:checked:hover+span,
 .filter-checkbox-input:hover+span,
@@ -1501,6 +1506,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  width: 200px;
 }
 
 .filter-radio-input+span::before {
@@ -1707,6 +1713,9 @@ img {
 .basket-btn,
 .compare-btn {
   width: 200px;
+  display: block;
+  text-align: center;
+  color: var(--basic-black)
 }
 
 .basket-btn {
