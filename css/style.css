@@ -703,7 +703,7 @@ img {
   position: absolute;
   display: block;
   background-repeat: no-repeat;
-  top: 33%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -754,7 +754,7 @@ img {
   opacity: 0.3;
 }
 
-.popular-item:hover::before {
+.popular-item-container:hover .popular-item::before {
   background-color: var(--basic-yellow-dark);
 }
 
