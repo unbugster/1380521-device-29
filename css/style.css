@@ -681,10 +681,10 @@ img {
   color: var(--basic-black);
 }
 
-.popular-item {
+.popular-item-container {
   position: relative;
-  letter-spacing: 0.05em;
   cursor: pointer;
+  letter-spacing: 0.05em;
 }
 
 .popular-item::before {
@@ -703,7 +703,7 @@ img {
   position: absolute;
   display: block;
   background-repeat: no-repeat;
-  top: 50%;
+  top: 33%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -728,7 +728,7 @@ img {
   background-image: url(../img/camera.svg);
 }
 
-.popular-item4 {
+.popular-item4-link-special {
   letter-spacing: 0;
 }
 
