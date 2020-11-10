@@ -33,10 +33,9 @@ function handlePopupToggle(popup) {
 
       window.addEventListener("keydown", function (evt) {
         if (evt.keyCode === 27) {
-          if (popup.style.display = "block") {
+          if (popup.classList.contains("modal-show")) {
             evt.preventDefault();
-            popup.classList.add("modal-error");
-            popup.style.display = "none";
+            popup.classList.remove("modal-show");
           }
         }
       });
