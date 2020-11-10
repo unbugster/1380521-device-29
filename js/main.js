@@ -8,8 +8,10 @@ var loginLogin = writeUsPopup.querySelector("[name=name]");
 var loginEmail = writeUsPopup.querySelector("[name=email]");
 
 function handlePopupToggle(popup) {
-  return function () {
+  return function (evt) {
+    evt.preventDefault();
     if (popup) {
+
       popup.classList.add("modal-show")
       var input = popup.querySelector("input");
       if (input) {
@@ -38,7 +40,7 @@ function handlePopupToggle(popup) {
             popup.classList.remove("modal-show");
           }
         }
-      });
+      })
     }
   }
 }
