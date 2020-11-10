@@ -20,7 +20,7 @@ function handlePopupToggle(popup) {
 
       if (storage) {
         loginLogin.value = storage;
-        loginPassword.focus();
+        loginEmail.focus();
       } else {
         loginLogin.focus();
       }
